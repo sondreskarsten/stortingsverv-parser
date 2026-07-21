@@ -50,6 +50,18 @@ def enrich(
     typer.echo(json.dumps(stats))
 
 
+@app.command(name="export-md")
+def export_md(
+    store: Path = typer.Argument(...),
+    out: Path = typer.Argument(...),
+    cache: Path = typer.Option(Path("cache/llm"), "--cache"),
+) -> None:
+    from .markdown import export_markdown
+
+    stats = export_markdown(store, out, cache)
+    typer.echo(json.dumps(stats))
+
+
 @app.command()
 def build(
     store: Path = typer.Argument(...),

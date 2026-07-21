@@ -12,9 +12,15 @@ Actions; enrichment uses GitHub Models. No external infrastructure.
 
 ## Data access
 
-Latest datasets are on the rolling release
-[`data-latest`](../../releases/tag/data-latest). Each table ships as
-`.parquet` (zstd), `.csv.gz` and `.jsonl.gz`.
+Two entry points:
+
+- Browse: [`data-md/`](data-md/) holds the latest publication as plain
+  markdown tables rendered directly on GitHub (persons, every registered
+  interest verbatim, share transactions, model-derived items, and a
+  publication index linking every source PDF).
+- Download: the rolling release
+  [`data-latest`](../../releases/tag/data-latest) carries the full history.
+  Each table ships as `.parquet` (zstd), `.csv.gz` and `.jsonl.gz`.
 
 ```python
 import pyarrow.parquet as pq, urllib.request
@@ -73,12 +79,14 @@ uv run stortinget-register sync ./mirror
 uv run stortingsverv parse ./mirror ./store
 GITHUB_TOKEN=... uv run stortingsverv enrich ./store ./cache/llm --max-requests 50
 uv run stortingsverv build ./store ./dist --cache ./cache/llm
+uv run stortingsverv export-md ./store ./data-md --cache ./cache/llm
 ```
 
 ## Workflows
 
 `parse-and-release.yml` runs Fridays 07:30 UTC and on dispatch: syncs the
 mirror (cached between runs), parses new snapshots into the store (restored
-from the previous release), enriches within the request budget, commits the
-cache, rebuilds the datasets and updates the `data-latest` release.
+from the previous release), enriches within the request budget, rebuilds
+the datasets, regenerates `data-md/`, commits cache and markdown, and
+updates the `data-latest` release.
 `ci.yml` runs the test suite against a committed fixture publication.

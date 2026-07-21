@@ -61,18 +61,21 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: uv run stortingsverv enrich ./store ./cache/llm --max-requests ${{ inputs.max_requests || 120 }}
 
-      - name: Commit enrichment cache
+      - name: Build datasets
+        run: uv run stortingsverv build ./store ./dist --cache ./cache/llm
+
+      - name: Export markdown tables
+        run: uv run stortingsverv export-md ./store ./data-md --cache ./cache/llm
+
+      - name: Commit cache and markdown
         run: |
           git config user.name "Sondre Skarsten"
           git config user.email "sondreskarsten@gmail.com"
-          git add cache/llm
+          git add cache/llm data-md
           if ! git diff --cached --quiet; then
-            git commit -m "cache: enrichment results $(date -u +%F)"
+            git commit -m "data: enrichment cache and markdown snapshot $(date -u +%F)"
             git push
           fi
-
-      - name: Build datasets
-        run: uv run stortingsverv build ./store ./dist --cache ./cache/llm
 
       - name: Pack store
         run: tar --zstd -cf store.tar.zst store
