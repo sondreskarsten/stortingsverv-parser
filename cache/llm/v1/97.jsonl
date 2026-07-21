@@ -1,1 +1,2 @@
 {"block_hash": "97341c03ab6b4d2bbbc12f0fea7a1c5180f0eba2e2ffa24438a73bd1fb021e1d", "items": [{"item_text": "ulønnet permisjon fra stillingen som veileder i NAV.", "organisation": "NAV", "role": "permisjon", "remuneration": "ulønnet", "amount_nok": null, "share_count": null, "share_pct": null, "org_number": null, "date_from": null, "date_to": null, "country": null}], "model": "openai/gpt-4o-mini", "prompt_version": "v1"}
+{"block_hash": "9726d3551196f02d096e123ec0414b46957f23cbd81d8958cc073de29c8d8197", "items": [], "model": "none", "prompt_version": "v1"}
