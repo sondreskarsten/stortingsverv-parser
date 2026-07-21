@@ -1,0 +1,8 @@
+mirror/
+store/
+dist/
+__pycache__/
+*.pyc
+.venv/
+*.tar.zst
+.pytest_cache/

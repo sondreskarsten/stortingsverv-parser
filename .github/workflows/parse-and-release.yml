@@ -1,0 +1,83 @@
+name: Parse and release
+
+on:
+  schedule:
+    - cron: '30 7 * * 5'
+  workflow_dispatch:
+    inputs:
+      max_requests:
+        description: 'Max GitHub Models requests this run'
+        type: number
+        default: 120
+
+concurrency:
+  group: parse-and-release
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  models: read
+
+env:
+  GH_TOKEN: ${{ github.token }}
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Install
+        run: |
+          uv venv
+          uv pip install . 'git+https://github.com/sondreskarsten/parse-stortingsrepresentantenes-verv-og-konomiske-interesser.git'
+
+      - name: Restore PDF mirror
+        uses: actions/cache@v4
+        with:
+          path: mirror
+          key: mirror-v1-${{ github.run_id }}
+          restore-keys: |
+            mirror-v1-
+
+      - name: Sync PDF mirror
+        run: uv run stortinget-register sync ./mirror --start-year 2021 --max-runtime 25 --log-level INFO
+
+      - name: Restore parsed store
+        run: |
+          gh release download data-latest -p store.tar.zst -O store.tar.zst || true
+          if [ -f store.tar.zst ]; then tar --zstd -xf store.tar.zst; fi
+
+      - name: Parse new snapshots
+        run: uv run stortingsverv parse ./mirror ./store
+
+      - name: Enrich via GitHub Models
+        run: uv run stortingsverv enrich ./store ./cache/llm --max-requests ${{ inputs.max_requests || 120 }}
+
+      - name: Commit enrichment cache
+        run: |
+          git config user.name "Sondre Skarsten"
+          git config user.email "sondreskarsten@gmail.com"
+          git add cache/llm
+          if ! git diff --cached --quiet; then
+            git commit -m "cache: enrichment results $(date -u +%F)"
+            git push
+          fi
+
+      - name: Build datasets
+        run: uv run stortingsverv build ./store ./dist --cache ./cache/llm
+
+      - name: Pack store
+        run: tar --zstd -cf store.tar.zst store
+
+      - name: Publish release
+        run: |
+          SUMMARY=$(python3 -c "import json; qa=json.load(open('dist/qa_report.json')); print(f\"{qa['n_snapshots']} snapshots {qa['date_range'][0]} to {qa['date_range'][1]}. Rows: \" + \", \".join(f'{k}={v}' for k,v in qa['rows'].items()) + f\". Enrichment coverage: {qa['enrichment_coverage']}\")")
+          gh release view data-latest >/dev/null 2>&1 || gh release create data-latest --title "Datasets (rolling)" --notes "Rolling datasets."
+          gh release edit data-latest --notes "Updated $(date -u +'%F %R UTC'). ${SUMMARY}"
+          gh release upload data-latest dist/* store.tar.zst --clobber
