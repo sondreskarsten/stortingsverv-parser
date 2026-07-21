@@ -50,13 +50,15 @@ jobs:
 
       - name: Restore parsed store
         run: |
-          gh release download data-latest -p store.tar.zst -O store.tar.zst || true
+          gh release download data-latest -p 'store.tar.zst' || true
           if [ -f store.tar.zst ]; then tar --zstd -xf store.tar.zst; fi
 
       - name: Parse new snapshots
         run: uv run stortingsverv parse ./mirror ./store
 
       - name: Enrich via GitHub Models
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: uv run stortingsverv enrich ./store ./cache/llm --max-requests ${{ inputs.max_requests || 120 }}
 
       - name: Commit enrichment cache

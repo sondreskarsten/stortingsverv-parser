@@ -1,0 +1,2 @@
+{"block_hash": "b7daeefc44d6b5f24657e0f89cd12b2bd610ba38941b9a19caa2ed94645aff32", "items": [], "model": "openai/gpt-4o-mini", "prompt_version": "v1"}
+{"block_hash": "b73e36ad59edd9996903747d1d9a39bd4f34fa34f9ad140f93065e9cf48df9ab", "items": [{"item_text": "Voss Veksel og Landmandsbank 1000 aksjar.", "organisation": "Voss Veksel og Landmandsbank", "role": "aksjar", "remuneration": null, "amount_nok": null, "share_count": 1000, "share_pct": null, "org_number": null, "date_from": null, "date_to": null, "country": null}], "model": "openai/gpt-4o-mini", "prompt_version": "v1"}

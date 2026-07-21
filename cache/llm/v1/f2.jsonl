@@ -1,0 +1,2 @@
+{"block_hash": "f248d67bfb382fdd2315ba09ee05c19c2ef600c4308a690a5d03575ad156ed23", "items": [], "model": "none", "prompt_version": "v1"}
+{"block_hash": "f2540b9b2a4023af335dc29770ac08d04dfbc5ba525ba979bae3bfec95284bfc", "items": [{"item_text": "L.K. Eskeland AS, ingen aktive oppdrag", "organisation": "L.K. Eskeland AS", "role": "ingen aktive oppdrag", "remuneration": null, "amount_nok": null, "share_count": null, "share_pct": null, "org_number": null, "date_from": null, "date_to": null, "country": null}], "model": "openai/gpt-4o-mini", "prompt_version": "v1"}

@@ -1,0 +1,1 @@
+{"block_hash": "0a6bc66a8d564f3d7c964a6738a8a0bba1f7bff0d70aa6ade20464b5506aa02e", "items": [{"item_text": "Gardbruker", "organisation": null, "role": "Gardbruker", "remuneration": null, "amount_nok": null, "share_count": null, "share_pct": null, "org_number": null, "date_from": null, "date_to": null, "country": null}], "model": "openai/gpt-4o-mini", "prompt_version": "v1"}
