@@ -1,6 +1,6 @@
 # Items (model-derived), snapshot 2026-06-30
 
-Derived layer: blocks split into items by a language model. Coverage 40/503 non-empty blocks (0.0795). Uncovered blocks are absent here but present verbatim in sections.md.
+Derived layer: blocks split into items by a language model. Coverage 49/503 non-empty blocks (0.0974). Uncovered blocks are absent here but present verbatim in sections.md.
 
 | person | § | item_text | organisation | role | remuneration | amount_nok | share_pct | share_count | org_number | from | to | country |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -36,6 +36,9 @@ Derived layer: blocks split into items by a language model. Coverage 40/503 non-
 | Haltbrekken, Lars (SV, Sør-Trøndelag) | §5 | Har pensjonsrettigheter fra tiden jeg var leder i Naturvernforbundet | Naturvernforbundet | leder |  |  |  |  |  |  |  |  |
 | Helleland, Trond (H, Buskerud) | §11 | Sølvskål fra Høyre i anledning 50-årsdag 2012 |  |  |  |  |  |  |  |  |  |  |
 | Hoksrud, Bård (FrP, Telemark) | §5 | Permisjon fra stilling i Fremskrittspartiets Hovedorganisasjon | Fremskrittspartiets Hovedorganisasjon | permisjon |  |  |  |  |  |  |  |  |
+| Hoksrud, Bård (FrP, Telemark) | §11 | Samlegjenstander av div. pins, medaljer og klokker. Mottatt deler av samlingen som gave. Verdi av hele samlingen ca. 5 000 kroner. |  |  |  | 5000 |  |  |  |  |  |  |
+| Hoksrud, Bård (FrP, Telemark) | §11 | Åpnet kunstutstillingen til Thore Sveberg den 23. juni 2019, mottatt et lite malt bilde som takk for hjelpen. Verdi ukjent. | Thore Sveberg |  |  |  |  |  |  | 2019-06-23 |  |  |
+| Hoksrud, Bård (FrP, Telemark) | §11 | Mottatt sett med treningstøy fra stiftelsen Aktiv mot kreft(nov-2019). | Aktiv mot kreft |  |  |  |  |  |  | 2019-11 |  |  |
 | Hussaini, Mani (A, Akershus) | §5 | Jeg har permisjon fra jobben som næringspolitisk sjef i NorgesGruppen. I permisjonstiden har jeg følgelig ikke noe lønnsbetaling fra NorgesGruppen. | NorgesGruppen | permisjon | ikke lønnsbetaling |  |  |  |  |  |  |  |
 | Hussaini, Mani (A, Akershus) | §5 | Heller ikke noen velferdsgoder. |  | velferdsgoder |  |  |  |  |  |  |  |  |
 | Hussein, Marian (SV, Oslo) | §5 | ulønnet permisjon fra stillingen som veileder i NAV. | NAV | permisjon | ulønnet |  |  |  |  |  |  |  |
@@ -44,6 +47,8 @@ Derived layer: blocks split into items by a language model. Coverage 40/503 non-
 | Kjølmoen, Per Vidar (A, Møre og Romsdal) | §8 | 50% eierandel i selveierleilighet i Trondheim (Nygata 18) |  | eierandel |  |  | 50 |  |  |  |  |  |
 | Listhaug, Sylvi (FrP, Møre og Romsdal) | §3 | Gav i oktober 2018 ut boken "Der andre tier" på Kagge Forlag | Kagge Forlag | null |  |  |  |  |  | 2018-10 |  |  |
 | Listhaug, Sylvi (FrP, Møre og Romsdal) | §11 | 2 søvskjeer verdi 2030 kroner, bedriften Arven i Bergen | Arven |  |  | 2030 |  |  |  |  |  |  |
+| Lossius, Jorunn Gleditsch (KrF, Vest-Agder) | §2 | Leder av representantskapet i LiBiR IKS - møtegodtgjørelse | LiBiR IKS | Leder av representantskapet | møtegodtgjørelse |  |  |  |  |  |  |  |
+| Lossius, Jorunn Gleditsch (KrF, Vest-Agder) | §2 | Leder i KUAS - Kokkenes utvikling AS - sovende selskap, ikke mottatt honorar eller møtegodtgjørelse | KUAS - Kokkenes utvikling AS | Leder | ikke mottatt honorar eller møtegodtgjørelse |  |  |  |  |  |  |  |
 | Lønseth, Mari Holm (H, Sør-Trøndelag) | §5 | Permisjon fra stilling som advokatfullmektig i SANDS Advokatfirma DA. Ingen avtaler om fortsatt lønnsutbetalinger, opprettholdelse av velferdsfordeler, pensjonsrettigheter eller lignende. | SANDS Advokatfirma DA | permisjon |  |  |  |  |  |  |  |  |
 | Lønseth, Mari Holm (H, Sør-Trøndelag) | §10 | Reise, foredragsholder som boligpolitisk talsperson, seminar "Knutepunkt" i regi av Sparebank1 SMN og EiendomsMegler1, Monaco oktober 2018. | Sparebank1 SMN og EiendomsMegler1 | foredragsholder |  |  |  |  |  | 2018-10 |  | Monaco |
 | Martinussen, Marie Sneve (R, Akershus) | §3 | Har et enkeltpersonsforetak som ikke lengre er aktivt. |  | Enkeltpersonsforetak |  |  |  |  |  |  |  |  |
@@ -51,12 +56,21 @@ Derived layer: blocks split into items by a language model. Coverage 40/503 non-
 | Myrli, Sverre (A, Akershus) | §5 | Permisjon uten lønn fra stilling som konsulent i Forsvarsbygg. | Forsvarsbygg | Permisjon | uten lønn |  |  |  |  |  |  |  |
 | Myrli, Sverre (A, Akershus) | §10 | Generalforsamling i Atlantic Treaty Association (ATA), Tallin, Estland september 2005. Opphold betalt av Den norske Atlanterhavskomité. | Atlantic Treaty Association (ATA) | Generalforsamling |  |  |  |  |  | 2005-09 |  | Estland |
 | Myrli, Sverre (A, Akershus) | §10 | Konferanse i Beograd 16.-18. juni 2006. Hotellopphold betalt av Atlantic Association of Young Political Leaders (AAYPL). | Atlantic Association of Young Political Leaders (AAYPL) | Konferanse |  |  |  |  |  | 2006-06-16 | 2006-06-18 |  |
+| Raja, Abid (V, Akershus) | §5 | Pensjonsrettigheter fra tidligere statlige stillinger som nemndleder | Utlendingsnemnda | nemndleder |  |  |  |  |  |  |  |  |
+| Raja, Abid (V, Akershus) | §5 | Utlendingsnemnda, politiadvokat og ambassadesekretær. | Utlendingsnemnda | politiadvokat |  |  |  |  |  |  |  |  |
 | Røed, Even A. (A, Buskerud) | §5 | Permisjon, Kongsberg Videregående skole | Kongsberg Videregående skole | Permisjon |  |  |  |  |  |  |  |  |
 | Sande, Erling (Sp, Sogn og Fjordane) | §2 | Styremedlem i Sogn og Fjordane Senterparti | Sogn og Fjordane Senterparti | Styremedlem |  |  |  |  |  |  |  |  |
 | Sande, Erling (Sp, Sogn og Fjordane) | §5 | Eg er i ulønna permisjon frå selskapet Sogn og Fjordane Energi A/S | Sogn og Fjordane Energi A/S | ulønna permisjon |  |  |  |  |  |  |  |  |
 | Solberg, Erna (H, Hordaland) | §2 | Partileder i Høyre (ytelser) | Høyre | Partileder |  |  |  |  |  |  |  |  |
 | Solberg, Erna (H, Hordaland) | §2 | Styremedlem i Global Citizen, 2022 - (ubetalt) | Global Citizen | Styremedlem | ubetalt |  |  |  |  | 2022 |  |  |
 | Solberg, Erna (H, Hordaland) | §2 | Leder av FNs høynivåpanel for flerdimensjonal sårbarhetsindeks for SIDS-land, 2022 - (ubetalt) | FNs høynivåpanel for flerdimensjonal sårbarhetsindeks for SIDS-land | Leder | ubetalt |  |  |  |  | 2022 |  |  |
+| Vedum, Trygve Slagsvold (Sp, Hedmark) | §2 | Leder av Senterpartiet (godtgjørelse) | Senterpartiet | Leder | godtgjørelse |  |  |  |  |  |  |  |
+| Vedum, Trygve Slagsvold (Sp, Hedmark) | §3 | Gårdbruker. Enkeltpersonforetak tilknyttet drift av Bjørby gård, Stange kommune. | Bjørby gård | Gårdbruker |  |  |  |  |  |  |  |  |
+| Vedum, Trygve Slagsvold (Sp, Hedmark) | §8 | Bjørby gård i Stange kommune (0417-239/1). | Bjørby gård | eiendom i næring |  |  |  |  | 0417-239 |  |  |  |
+| Vedum, Trygve Slagsvold (Sp, Hedmark) | §10 | To dagsreiser til England for å møte representanter for det engelske boligsamvirket og britiske politikere. Betalt av firmaet Hedalm Anebyhus. (I stortingsperioden 2005-2009) | Hedalm Anebyhus | reise |  |  |  |  |  | 2005-01-01 | 2009-12-31 | England |
+| Støre, Jonas Gahr (A, Oslo) | §3 | Inntekt fra bokutgivelse "I bevegelse", Cappelen Damm 2014 | Cappelen Damm | inntekt fra bokutgivelse |  |  |  |  |  | 2014 |  |  |
+| Støre, Jonas Gahr (A, Oslo) | §11 | 2 billetter fotballkamp 09.08.2015 fra NOR AS | NOR AS | gave |  |  |  |  |  | 2015-08-09 |  |  |
+| Støre, Jonas Gahr (A, Oslo) | §11 | Madshus - Skipar (Redline Carbon Classic Cold) 08.12.16 | Madshus | gave |  |  |  |  |  | 2016-12-08 |  |  |
 | Bruflot, Sandra (H, Buskerud) | §2 | Medlem av Unge Høyres desisjonskomite. Ikke lønnet. | Unge Høyre | medlem av desisjonskomite | ikke lønnet |  |  |  |  |  |  |  |
 | Eskeland, Liv Kari (H, Hordaland) | §5 | Avslutta arbeidsforhold med tidligere arbeidsgjevar |  | tidligere arbeidsgjevar |  |  |  |  |  |  |  |  |
 | Lunde, Heidi Nordby (H, Oslo) | §2 | Styremedlem, Stiftelsen Liberalt Forskningsinstitutt (LIFO), ulønnet. | Stiftelsen Liberalt Forskningsinstitutt (LIFO) | Styremedlem | ulønnet |  |  |  |  |  |  |  |
