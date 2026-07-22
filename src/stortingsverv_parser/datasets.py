@@ -21,6 +21,7 @@ from . import carve
 from .enrich import PROMPT_VERSION, load_cache
 from .layout import PARSER_VERSION, parse_document
 from .roster import build_roster, load_reference
+from .smk import SMK_SCHEMAS, SMK_TABLES
 
 TABLE_NAMES = ["documents", "persons", "sections", "transactions"]
 
@@ -194,7 +195,16 @@ def _write_jsonl_gz(table: pa.Table, path: Path) -> None:
     path.write_bytes(buf.getvalue())
 
 
-def build(store_dir: Path, out_dir: Path, cache_dir: Path) -> dict:
+def _concat_smk(smk_store: Path, name: str) -> "pa.Table":
+    parts = [pq.read_table(p) for p in sorted(smk_store.glob(f"*/{name}.parquet"))]
+    if not parts:
+        return SMK_SCHEMAS[name].empty_table()
+    return pa.concat_tables(parts)
+
+
+def build(
+    store_dir: Path, out_dir: Path, cache_dir: Path, smk_store_dir: Path | None = None
+) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     combined: dict[str, pa.Table] = {n: _concat(store_dir, n) for n in TABLE_NAMES}
     combined["items"] = build_items(combined["sections"], cache_dir)
@@ -203,6 +213,9 @@ def build(store_dir: Path, out_dir: Path, cache_dir: Path) -> dict:
         combined["roster"] = build_roster(
             combined["persons"].to_pylist(), load_reference(api_dir)
         )
+    if smk_store_dir is not None and smk_store_dir.exists():
+        for name in SMK_TABLES:
+            combined[name] = _concat_smk(smk_store_dir, name)
 
     for name, table in combined.items():
         pq.write_table(table, out_dir / f"{name}.parquet", compression="zstd")
@@ -227,6 +240,9 @@ def build(store_dir: Path, out_dir: Path, cache_dir: Path) -> dict:
         "rows": {n: combined[n].num_rows for n in combined},
         "sections_nonempty": len(nonempty),
         "sections_enriched_unique_blocks": len(enriched_hashes),
+        "smk_versions": combined["smk_documents"].num_rows
+        if "smk_documents" in combined
+        else None,
         "roster_dob_rate": round(
             sum(1 for r in combined["roster"].to_pylist() if r["foedselsdato"])
             / combined["roster"].num_rows,

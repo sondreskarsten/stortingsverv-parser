@@ -60,6 +60,46 @@ def backfill(
     typer.echo(f"backfilled {len(parsed)} snapshots: {parsed}")
 
 
+@app.command(name="smk-collect")
+def smk_collect(
+    manifest: Path = typer.Argument(Path("smk/manifest.json")),
+    pdf_dir: Path = typer.Option(Path("smk_pdfs"), "--pdf-dir"),
+    spn: bool = typer.Option(True, "--spn/--no-spn"),
+) -> None:
+    from . import smk
+
+    if spn:
+        typer.echo(f"spn status: {smk.save_page_now()}")
+    new = smk.collect(manifest, pdf_dir)
+    typer.echo(f"new smk versions: {len(new)}: {[e['generated'] for e in new]}")
+
+
+@app.command(name="smk-parse")
+def smk_parse(
+    manifest: Path = typer.Argument(Path("smk/manifest.json")),
+    store: Path = typer.Argument(Path("store_smk")),
+    pdf_dir: Path = typer.Option(Path("smk_pdfs"), "--pdf-dir"),
+) -> None:
+    from . import smk
+
+    parsed = smk.parse_missing(manifest, pdf_dir, store)
+    typer.echo(f"smk parsed {len(parsed)}: {parsed}")
+
+
+@app.command(name="smk-archive")
+def smk_archive(
+    manifest: Path = typer.Argument(Path("smk/manifest.json")),
+    pdf_dir: Path = typer.Option(Path("smk_pdfs"), "--pdf-dir"),
+    repo: str = typer.Option(..., "--repo"),
+) -> None:
+    import os
+
+    from . import smk
+
+    token = os.environ["GITHUB_TOKEN"]
+    typer.echo(json.dumps(smk.archive_versions(manifest, pdf_dir, repo, token)))
+
+
 @app.command()
 def archive(
     mirror: Path = typer.Argument(...),
@@ -95,8 +135,9 @@ def build(
     store: Path = typer.Argument(...),
     out: Path = typer.Argument(...),
     cache: Path = typer.Option(Path("cache/llm"), "--cache"),
+    smk_store: Path = typer.Option(Path("store_smk"), "--smk-store"),
 ) -> None:
-    qa = datasets.build(store, out, cache)
+    qa = datasets.build(store, out, cache, smk_store_dir=smk_store)
     typer.echo(json.dumps({k: v for k, v in qa.items() if k != "snapshots"}))
 
 
