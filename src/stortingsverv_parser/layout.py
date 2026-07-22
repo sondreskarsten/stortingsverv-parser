@@ -10,11 +10,14 @@ x-position. No literal label text is ever matched.
 
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 
 import pdfplumber
 
-PARSER_VERSION = "1.0.0"
+PARSER_VERSION = "1.1.0"
+
+NUMERIC_MARKER_RE = re.compile(r"\d{1,2}\.")
 
 FOOTER_BAND_PT = 65.0
 LINE_TOP_TOLERANCE = 2.5
@@ -213,7 +216,10 @@ def _column_split(lines: list[Line]) -> float:
 
 
 def _is_marker_start(left: list[Word]) -> bool:
-    return bool(left) and left[0].text.startswith("§")
+    if not left:
+        return False
+    tok = left[0].text
+    return tok.startswith("§") or NUMERIC_MARKER_RE.fullmatch(tok) is not None
 
 
 def _consume_marker(left: list[Word]) -> tuple[str, list[str]]:

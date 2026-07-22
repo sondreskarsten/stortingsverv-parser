@@ -8,6 +8,22 @@
   "dataset": true
  },
  {
+  "date": "2013-08-21",
+  "url": "https://web.archive.org/web/20130928074809id_/http://www.stortinget.no/Global/pdf/register%20for%20stortingsrepresentantenes%20og%20regjeringsmedlemmenes%20verv%20og%20okonomiske%20interesser.pdf",
+  "origin": "wayback",
+  "sha256": "32fe9368cb8bf4eedc0f1978dc846acd5ef53f1727f4255221bae8e75d5d0d20",
+  "ajourfort": "2013-08-21",
+  "dataset": true
+ },
+ {
+  "date": "2014-06-20",
+  "url": "https://web.archive.org/web/20140816125728id_/http://www.stortinget.no/Global/pdf/register%20for%20stortingsrepresentantenes%20og%20regjeringsmedlemmenes%20verv%20og%20okonomiske%20interesser.pdf",
+  "origin": "wayback",
+  "sha256": "cad2bf6db490d3b32a72c8478456ae37409d0f6da07f4fff87d02411e0c48420",
+  "ajourfort": "2014-06-20",
+  "dataset": true
+ },
+ {
   "date": "2016-12-19",
   "url": "https://web.archive.org/web/20170114231330id_/https://www.stortinget.no/globalassets/pdf/verv_oekonomiske_interesser_register/register-for-stortingsrepresentantene-og-regjeringsmedlemmenes-verv-og-okonomiske-interesser.pdf",
   "origin": "wayback",

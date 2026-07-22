@@ -9,8 +9,8 @@ MANIFEST = Path(__file__).parent.parent / "backfill" / "manifest.json"
 
 def test_backfill_manifest_integrity():
     entries = json.loads(MANIFEST.read_text())
-    assert len(entries) == 48
-    assert sum(e["dataset"] for e in entries) == 47
+    assert len(entries) == 50
+    assert sum(e["dataset"] for e in entries) == 49
     dates = [e["date"] for e in entries if e["dataset"]]
     assert len(set(dates)) == len(dates)
     assert min(dates) == "2011-07-29"

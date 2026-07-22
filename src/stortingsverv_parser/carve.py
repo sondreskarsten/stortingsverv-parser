@@ -24,6 +24,9 @@ def _split_header(header: str) -> tuple[str, str | None, str | None]:
     name = header.split("(", 1)[0].strip().rstrip(",")
     inside = header.split("(", 1)[1].rsplit(")", 1)[0]
     if "," in inside:
+        parts = [p.strip() for p in inside.split(",")]
+        if len(parts) >= 3 and parts[0].isdigit():
+            return name, parts[1], ", ".join(parts[2:])
         party, constituency = inside.split(",", 1)
         return name, party.strip(), constituency.strip()
     return name, inside.strip() or None, None
