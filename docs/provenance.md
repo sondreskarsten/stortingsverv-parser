@@ -107,9 +107,22 @@ The two-column layout parsed by this repo is unchanged since at least the
 2011 document: every recovered publication, 2011 included, parses with
 zero remainder lines under the same coordinate rules as the 2026 ones.
 
-## Roster caveat
+## Identity attachment (roster table)
 
-Population roster snapshots exist only for mirror-era dates (2022-10
-onward); the parsed-persons versus roster cross-check in `qa_report.json`
-is therefore null for all backfill snapshots. Reconstructing historical
-rosters from data.stortinget.no would close this and has not been done.
+Downstream joins use (name, foedselsdato). The `roster` table attaches
+Stortinget API identity to every parsed person row: the reference pool is
+the raw `representanter` responses (fast plus vara, all with
+foedselsdato) for every parliamentary period 2001-2029 plus the current
+`regjering` response, committed verbatim under
+`backfill/stortinget_api/` (2,831 unique persons). Matching is by printed
+name with three uniqueness-guarded methods (exact "Etternavn, Fornavn",
+surname plus first given-name token, order-and-hyphen-insensitive token
+set); ambiguous and unmatched rows are flagged, never guessed. Attachment
+rate is 99.0% of 44,136 rows (Representanter 99.6%, Vararepresentanter
+98.8%, Regjeringsmedlemmer 94.7%). The residual is 36 unique names,
+dominated by ministers who never sat in parliament: the historical
+`regjering` endpoint ignores its period parameter and returns only the
+sitting government, so past external ministers have no API record in the
+pool. The mirror-era population JSON cross-check in `qa_report.json`
+remains null for backfill snapshots; the roster table supersedes it for
+identity purposes.

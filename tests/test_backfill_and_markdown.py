@@ -32,3 +32,22 @@ def test_md_escaping():
     assert lines[0] == "| h1 | h2 |"
     assert lines[1] == "|---|---|"
     assert lines[2] == "| x\\|y | line1<br>line2 |"
+
+
+def test_roster_reference_and_match():
+    from stortingsverv_parser.roster import build_roster, load_reference
+
+    ref = load_reference(Path(__file__).parent.parent / "backfill" / "stortinget_api")
+    assert len(ref) > 2500
+    assert all(r["foedselsdato"] for r in ref)
+    persons = [
+        {"date": "2026-06-30", "person_index": 1, "section_heading": "Representanter",
+         "person_header": "Abdi, Hashim (A, Østfold)", "name": "Abdi, Hashim",
+         "party": "A", "constituency": "Østfold"},
+        {"date": "2026-06-30", "person_index": 2, "section_heading": "Representanter",
+         "person_header": "X, Y (A, Oslo)", "name": "Ingenmatch, Finnesikke",
+         "party": "A", "constituency": "Oslo"},
+    ]
+    roster = build_roster(persons, ref).to_pylist()
+    assert roster[0]["match_method"] == "exact" and roster[0]["foedselsdato"]
+    assert roster[1]["match_method"] == "unmatched" and roster[1]["foedselsdato"] is None

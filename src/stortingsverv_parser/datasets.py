@@ -20,6 +20,7 @@ import pyarrow.parquet as pq
 from . import carve
 from .enrich import PROMPT_VERSION, load_cache
 from .layout import PARSER_VERSION, parse_document
+from .roster import build_roster, load_reference
 
 TABLE_NAMES = ["documents", "persons", "sections", "transactions"]
 
@@ -197,6 +198,11 @@ def build(store_dir: Path, out_dir: Path, cache_dir: Path) -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
     combined: dict[str, pa.Table] = {n: _concat(store_dir, n) for n in TABLE_NAMES}
     combined["items"] = build_items(combined["sections"], cache_dir)
+    api_dir = Path("backfill/stortinget_api")
+    if api_dir.exists():
+        combined["roster"] = build_roster(
+            combined["persons"].to_pylist(), load_reference(api_dir)
+        )
 
     for name, table in combined.items():
         pq.write_table(table, out_dir / f"{name}.parquet", compression="zstd")
@@ -221,6 +227,13 @@ def build(store_dir: Path, out_dir: Path, cache_dir: Path) -> dict:
         "rows": {n: combined[n].num_rows for n in combined},
         "sections_nonempty": len(nonempty),
         "sections_enriched_unique_blocks": len(enriched_hashes),
+        "roster_dob_rate": round(
+            sum(1 for r in combined["roster"].to_pylist() if r["foedselsdato"])
+            / combined["roster"].num_rows,
+            4,
+        )
+        if "roster" in combined and combined["roster"].num_rows
+        else None,
         "enrichment_coverage": round(
             len([s for s in nonempty if s["block_hash"] in cache]) / len(nonempty), 4
         )
