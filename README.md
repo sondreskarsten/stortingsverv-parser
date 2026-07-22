@@ -6,8 +6,12 @@ government members' positions and economic interests
 
 The sibling repo
 [parse-stortingsrepresentantenes-verv-og-konomiske-interesser](https://github.com/sondreskarsten/parse-stortingsrepresentantenes-verv-og-konomiske-interesser)
-mirrors the biweekly register PDFs. This repo parses the PDF text layer into
-tables and publishes them as GitHub release assets. Everything runs on GitHub
+mirrors the biweekly register PDFs from 2022-10-18 onward. This repo parses
+the PDF text layer into tables and publishes them as GitHub release assets;
+47 earlier publications back to 2011, recovered from the live archive and
+the Internet Archive, are pinned in `backfill/manifest.json`, giving the
+datasets a 2011-2026 span. [docs/provenance.md](docs/provenance.md) maps
+the publication regimes, what survives and what is lost. Everything runs on GitHub
 Actions; enrichment uses GitHub Models. No external infrastructure.
 
 ## Data access
@@ -36,11 +40,13 @@ flowchart LR
   subgraph SRC["Sources"]
     LP["stortinget.no landing page<br/>okonomiske-interesser (HTML)"]
     PDFS["stortinget.no PDF endpoint<br/>globalassets/pdf/verv-og-okonomiske-interesser/<br/>arkiv_YYYY-YYYY/pr-D-maaned-YYYY.pdf<br/>(legacy -register base as fallback)"]
+    WBK["Internet Archive<br/>web.archive.org captures<br/>(2011, 2016 rolling-file era)"]
     POP["population roster<br/>(stortinget-register collector)"]
     GHM["GitHub Models API<br/>models.github.ai<br/>openai/gpt-4o-mini"]
   end
 
   subgraph RUN["GitHub Actions: parse-and-release, Fridays 07:30 UTC + dispatch"]
+    BF["backfill/manifest.json<br/>47 publications 2011-2022<br/>date + url + origin + sha256"]
     SYNC["stortinget-register sync<br/>tiered discovery: scrape, best-guess,<br/>exhaustive date scan; sha256 manifest"]
     MIR[("mirror/<br/>pdfs + population + manifest.parquet<br/>persisted via Actions cache")]
     ARC["archive<br/>sha256-verify, upload missing,<br/>first observation never overwritten"]
@@ -60,12 +66,16 @@ flowchart LR
 
   LP --> SYNC
   PDFS --> SYNC
+  WBK --> BF
+  PDFS --> BF
   POP --> SYNC
   SYNC --> MIR
   MIR --> ARC
   ARC --> REL2
   MIR --> PARSE
   PARSE --> STORE
+  BF --> PARSE
+  BF --> ARC
   STORE --> ENR
   GHM --> ENR
   ENR --> CACHE

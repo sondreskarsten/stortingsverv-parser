@@ -1,0 +1,81 @@
+# Provenance: publication regimes of the register, 2009-2026
+
+Everything below was established empirically in July 2026 by sweeping the
+live site, the Internet Archive CDX index, and archived landing-page
+snapshots, then probing candidate URLs against the live site. It is the
+authoritative map of where register publications have lived, what survives,
+and what is lost.
+
+## Era map
+
+| Era | Regime | URL | Survives |
+|---|---|---|---|
+| 2009 to ~2014 | One rolling PDF, overwritten in place | `stortinget.no/Global/pdf/Diverse/verv og økonomiske interesser.pdf` | One Internet Archive capture, crawled 2011-08-14, cover "Ajourført pr. 29. juli 2011" |
+| ~2015 to 2017 | Rolling fixed-name PDFs, overwritten in place | `globalassets/pdf/verv_oekonomiske_interesser_register/register-for-stortingsrepresentantene-...pdf`, later `verv_ok_interesser.pdf` | Three captures: covers 2016-12-19, 2020-03-23 (alternate bytes of a dated file), 2020-06-26 (byte-identical to a dated file) |
+| 2017-11 to 2022-10 | Dated PDFs, irregular filenames | `verv-og-okonomiske-interesser-register/{period}/pr…pdf`, folders with and without `arkiv_` | All 45 known publications still live under the current base (see below) |
+| 2022-10 onward | Dated PDFs, normalized filenames | `verv-og-okonomiske-interesser/arkiv_{period}/pr-D-måned-YYYY.pdf` (base was `-register` until the 2026 site restructure) | Fully live; collected by the sibling repo |
+
+## Filename irregularities, 2017-2022
+
+The dated era used no consistent scheme. Observed forms, all live today:
+`pr-20-november-2017.pdf`, `pr.-25-september-2018.pdf`,
+`pr.-25.-oktober-2018.pdf`, `pr.-16-okt-2019.pdf`, `pr.-18.-des-2019.pdf`,
+`pr.-1.-sept.-2021.pdf`. Variation axes: `pr-` vs `pr.-`, day with or
+without a trailing dot, month full or abbreviated, abbreviation with or
+without a trailing dot. The sibling collector generates only the
+normalized form, which is why these publications sat outside its mirror;
+`backfill/manifest.json` in this repo pins them instead.
+
+## The 2026 restructure
+
+The archive moved wholesale from
+`globalassets/pdf/verv-og-okonomiske-interesser-register/` to
+`globalassets/pdf/verv-og-okonomiske-interesser/`. Every historical dated
+file was placed under an `arkiv_{period}/` folder with its original
+filename spelling preserved. Normalized rewrites of irregular names 404;
+the original spellings return 200.
+
+## What was recovered
+
+47 publications predating the sibling repo's mirror (which starts
+2022-10-18):
+
+- 45 dated publications, 2017-11-20 to 2022-08-31, all fetched live.
+  41 were found via the Internet Archive CDX index; 4 more
+  (2021-11-19, 2022-03-23, 2022-04-29, 2022-08-31) were never crawled by
+  the Archive and were found by brute-forcing the filename variant space
+  across every gap month.
+- 2 publications recoverable only from Internet Archive captures of the
+  rolling fixed-URL files: 2011-07-29 and 2016-12-19. Their dates come
+  from the cover "Ajourført pr." line, since the URLs carry no date.
+
+One alternate observation is archived without entering the datasets: an
+Internet Archive capture of `verv_ok_interesser.pdf` whose cover matches
+the live dated 2020-03-23 publication but whose bytes differ (a separate
+export of the same content). One filename/cover mismatch exists in the
+source material itself: the file named `pr-20-desember-2017.pdf` states
+"Ajourført pr. 19. desember 2017" on its cover; the manifest records both.
+
+## What is lost
+
+The rolling fixed-URL regimes overwrote in place, so every version between
+Archive crawls is gone from the public web: publications from 2009 to
+2011-07, 2011-08 to 2016-12, and 2017-01 to 2017-10 are unverifiable
+online. Recovering them would require asking Stortinget directly. Months
+inside the dated era with no publication after exhaustive variant probing
+(2018-02, 2019-09, 2021-02, 2021-05, 2021-10, 2022-09, and summer breaks)
+are read as genuine publication gaps, with the caveat that a name outside
+the probed variant space would be indistinguishable from a gap.
+
+## Layout stability
+
+The two-column layout parsed by this repo is unchanged since at least the
+2011 document: every recovered publication, 2011 included, parses with
+zero remainder lines under the same coordinate rules as the 2026 ones.
+
+## Roster caveat
+
+Population roster snapshots exist only for mirror-era dates (2022-10
+onward); the parsed-persons versus roster cross-check in `qa_report.json`
+is therefore null for all backfill snapshots. Reconstructing historical
+rosters from data.stortinget.no would close this and has not been done.
