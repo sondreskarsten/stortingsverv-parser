@@ -29,6 +29,56 @@ urllib.request.urlretrieve(base + "sections.parquet", "sections.parquet")
 pq.read_table("sections.parquet")
 ```
 
+## Pipeline
+
+```mermaid
+flowchart LR
+  subgraph SRC["Sources"]
+    LP["stortinget.no landing page<br/>okonomiske-interesser (HTML)"]
+    PDFS["stortinget.no PDF endpoint<br/>globalassets/pdf/verv-og-okonomiske-interesser/<br/>arkiv_YYYY-YYYY/pr-D-maaned-YYYY.pdf<br/>(legacy -register base as fallback)"]
+    POP["population roster<br/>(stortinget-register collector)"]
+    GHM["GitHub Models API<br/>models.github.ai<br/>openai/gpt-4o-mini"]
+  end
+
+  subgraph RUN["GitHub Actions: parse-and-release, Fridays 07:30 UTC + dispatch"]
+    SYNC["stortinget-register sync<br/>tiered discovery: scrape, best-guess,<br/>exhaustive date scan; sha256 manifest"]
+    MIR[("mirror/<br/>pdfs + population + manifest.parquet<br/>persisted via Actions cache")]
+    ARC["archive<br/>sha256-verify, upload missing,<br/>first observation never overwritten"]
+    PARSE["parse<br/>coordinate classification: bold headers,<br/>x-column split, paragraph sections,<br/>10pt transaction grids, remainder channel"]
+    STORE[("store/<br/>immutable per-snapshot parquet<br/>keyed file_hash + parser_version")]
+    ENR["enrich<br/>unique blocks by block_hash, batched,<br/>request budget, 429-aware resume"]
+    CACHE[("cache/llm/v1/*.jsonl<br/>memoised items, committed to repo")]
+    BUILD["build<br/>concat snapshots + join cache<br/>+ qa_report"]
+    MD["export-md<br/>latest snapshot as markdown"]
+  end
+
+  subgraph OUT["Outputs on GitHub"]
+    REL1["release data-latest<br/>documents, persons, sections,<br/>transactions, items<br/>as parquet + csv.gz + jsonl.gz<br/>qa_report.json, store.tar.zst"]
+    REL2["release pdf-archive<br/>pr-DATE.pdf, population-DATE.json,<br/>archive_manifest.json"]
+    DMD["repo data-md/<br/>browsable markdown tables"]
+  end
+
+  LP --> SYNC
+  PDFS --> SYNC
+  POP --> SYNC
+  SYNC --> MIR
+  MIR --> ARC
+  ARC --> REL2
+  MIR --> PARSE
+  PARSE --> STORE
+  STORE --> ENR
+  GHM --> ENR
+  ENR --> CACHE
+  STORE --> BUILD
+  CACHE --> BUILD
+  BUILD --> REL1
+  STORE --> MD
+  CACHE --> MD
+  MD --> DMD
+  REL1 -. "store.tar.zst restored at next run" .-> STORE
+  REL1 -. "audit trail: date + file_hash<br/>resolve via archive_manifest.json" .-> REL2
+```
+
 ## Tables
 
 Every row is an observation at its publication date. Rows are never mutated;
