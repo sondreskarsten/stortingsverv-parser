@@ -136,3 +136,27 @@ and the new printed name must never co-occur in the same snapshot, and
 the person key must be anchored on foedselsdato, which is immutable and
 near-unique in this space (two collisions in 2,831), rather than on
 names. Until then the roster ships only the conservative methods.
+
+
+## The regjeringen.no register (SMK)
+
+Statsministerens kontor publishes a separate register for
+statssekretærer og politiske rådgivere, a population absent from the
+Stortinget register and every other source in this project. It began
+around March 2024 and lives at a single rolling contentassets URL that is
+overwritten in place. Cloudflare serves it only to residential clients:
+direct fetches return 403 from this project's containers, from Google
+cloud IPs and from GitHub-hosted runners alike. The Internet Archive is
+therefore the fetch path: the CDX index enumerates capture digests, each
+unique digest is one version, and the version date is the cover's
+"Dokument generert" line. Twelve versions exist from 2024-03-12 to
+2026-02-18 (63 to 78 persons each; the drop from 78 to 63 coincides with
+the government split of early 2025). All twelve parse with zero
+remainder under the form-layout parser: bold label words left of the
+value column, regular value words right of it, field boundaries on line
+gaps above 20pt, and the 2026-era per-person table header recognised by
+its bold value words. Versions between Archive crawls of a rolling URL
+are unrecoverable, so the weekly run fires an opportunistic Save Page
+Now before collecting; anonymous SPN currently returns 520 from cloud
+IPs, so until authenticated SPN keys are configured the freshness bound
+is the Archive's own crawl cadence, roughly monthly on this URL.

@@ -101,6 +101,9 @@ a new publication only appends rows at its own date. Cross-snapshot meaning
 | `persons` | publication × person block | section heading (Representanter / Regjeringsmedlemmer / Vararepresentanter), header verbatim, name / party / constituency carved from the header parentheses, empty-record note verbatim |
 | `sections` | publication × person × paragraph | paragraph marker (`§2`…`§11`, `§9a`, `§15`) and label as printed, block text verbatim, block hash |
 | `transactions` | printed transaction-table row | §9 share-transaction grids; cell values keyed by the table's own printed header labels (`Dato`, `Kjøp/Salg`, `Selskapsnavn`, …) in `cells_json` |
+| `smk_documents` | SMK version | One row per unique regjeringen.no register version (2024-03 onward), keyed by the cover's generation date, fetched via the Internet Archive |
+| `smk_persons` | SMK version × person | Statssekretærer og politiske rådgivere with printed party and county |
+| `smk_fields` | SMK version × person × field | Printed field label and verbatim value from the label-value form |
 | `roster` | publication × person | Stortinget API identity attached to each person row by uniqueness-guarded name matching: api_person_id, foedselsdato, kjoenn, match_method. 99.0% foedselsdato coverage; see docs/provenance.md |
 | `items` | LLM-derived item | one row per registered item split out of a section block: verbatim `item_text` plus organisation, role, remuneration, amount_nok, share_count, share_pct, org_number, date_from, date_to, country. Versioned by `model` and `prompt_version` |
 

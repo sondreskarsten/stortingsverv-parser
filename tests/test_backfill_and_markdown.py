@@ -51,3 +51,16 @@ def test_roster_reference_and_match():
     roster = build_roster(persons, ref).to_pylist()
     assert roster[0]["match_method"] == "exact" and roster[0]["foedselsdato"]
     assert roster[1]["match_method"] == "unmatched" and roster[1]["foedselsdato"] is None
+
+
+def test_smk_manifest_and_parser():
+    import json
+
+    from stortingsverv_parser.smk import SMK_TABLES, read_manifest
+
+    man = read_manifest(Path(__file__).parent.parent / "smk" / "manifest.json")
+    assert len(man) >= 12
+    assert all(e["sha256"] and e["wayback_ts"] and e["generated"] for e in man)
+    dates = [e["generated"] for e in man]
+    assert dates == sorted(dates)
+    assert SMK_TABLES == ["smk_documents", "smk_persons", "smk_fields"]

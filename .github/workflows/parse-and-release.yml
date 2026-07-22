@@ -58,6 +58,17 @@ jobs:
           gh release download data-latest -p 'store.tar.zst' || true
           if [ -f store.tar.zst ]; then tar --zstd -xf store.tar.zst; fi
 
+      - name: Collect SMK register
+        run: uv run stortingsverv smk-collect smk/manifest.json --pdf-dir ./smk_pdfs
+
+      - name: Parse SMK snapshots
+        run: uv run stortingsverv smk-parse smk/manifest.json ./store_smk --pdf-dir ./smk_pdfs
+
+      - name: Archive SMK PDFs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: uv run stortingsverv smk-archive smk/manifest.json --pdf-dir ./smk_pdfs --repo ${{ github.repository }}
+
       - name: Parse new snapshots
         run: uv run stortingsverv parse ./mirror ./store
 
@@ -70,7 +81,7 @@ jobs:
         run: uv run stortingsverv enrich ./store ./cache/llm --max-requests ${{ inputs.max_requests || 120 }}
 
       - name: Build datasets
-        run: uv run stortingsverv build ./store ./dist --cache ./cache/llm
+        run: uv run stortingsverv build ./store ./dist --cache ./cache/llm --smk-store ./store_smk
 
       - name: Export markdown tables
         run: uv run stortingsverv export-md ./store ./data-md --cache ./cache/llm
@@ -79,14 +90,14 @@ jobs:
         run: |
           git config user.name "Sondre Skarsten"
           git config user.email "sondreskarsten@gmail.com"
-          git add cache/llm data-md
+          git add cache/llm data-md smk
           if ! git diff --cached --quiet; then
             git commit -m "data: enrichment cache and markdown snapshot $(date -u +%F)"
             git push
           fi
 
       - name: Pack store
-        run: tar --zstd -cf store.tar.zst store
+        run: tar --zstd -cf store.tar.zst store store_smk
 
       - name: Publish release
         run: |
