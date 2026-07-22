@@ -1,0 +1,34 @@
+name: Connectivity probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Probe regjeringen.no and archive.org
+        run: |
+          UA="Mozilla/5.0 (X11; Linux x86_64) registrum-audit/1.0"
+          PDF="https://www.regjeringen.no/contentassets/fc1a9092514341438119914b3e2b0461/register-for-verv-og-okonomiske-interesser.pdf"
+          LAND="https://www.regjeringen.no/no/om-regjeringa/verv-og-okonomiske-interesser/id3025637/"
+          echo "== landing HEAD"
+          curl -s -o /dev/null -w "status=%{http_code} type=%{content_type}\n" -A "$UA" "$LAND" || true
+          echo "== pdf GET first bytes"
+          curl -s -A "$UA" -r 0-15 -o head.bin -w "status=%{http_code} type=%{content_type} size=%{size_download}\n" "$PDF" || true
+          xxd head.bin | head -1 || true
+          echo "== pdf full GET"
+          curl -s -A "$UA" -o full.pdf -w "status=%{http_code} size=%{size_download}\n" "$PDF" || true
+          head -c 5 full.pdf | xxd | head -1 || true
+          echo "== wayback cdx"
+          curl -s -o /dev/null -w "status=%{http_code}\n" "https://web.archive.org/cdx/search/cdx?url=regjeringen.no&limit=1" || true
+          echo "== wayback fetch"
+          curl -sL -o wb.pdf -w "status=%{http_code} size=%{size_download}\n" "https://web.archive.org/web/20260225025500id_/$PDF" || true
+          head -c 5 wb.pdf | xxd | head -1 || true
+          echo "== save page now"
+          curl -s -o spn.out -w "status=%{http_code}\n" -A "$UA" "https://web.archive.org/save/$PDF" || true
+          head -c 200 spn.out || true
