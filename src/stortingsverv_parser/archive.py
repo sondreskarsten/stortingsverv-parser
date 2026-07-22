@@ -98,7 +98,14 @@ def _existing_manifest(client: httpx.Client, repo: str, assets: dict[str, int]) 
     return r.json()
 
 
-def archive_mirror(mirror_dir: Path, repo: str, token: str, tag: str = TAG) -> dict:
+def archive_mirror(
+    mirror_dir: Path,
+    repo: str,
+    token: str,
+    tag: str = TAG,
+    backfill_manifest: Path | None = None,
+    pdf_dir: Path | None = None,
+) -> dict:
     client = httpx.Client()
     rid = _ensure_release(client, token, repo, tag)
     assets = _assets(client, token, repo, rid)
@@ -165,6 +172,46 @@ def archive_mirror(mirror_dir: Path, repo: str, token: str, tag: str = TAG) -> d
         )
         known.add((date, local_sha))
         changed = True
+
+    if backfill_manifest is not None and Path(backfill_manifest).exists():
+        for e in json.loads(Path(backfill_manifest).read_text()):
+            date = e["date"]
+            sha = e["sha256"]
+            if (date, sha) in known:
+                stats["already_archived"] += 1
+                continue
+            local = (pdf_dir / f"pr-{date}.pdf") if pdf_dir else None
+            if local is None or not local.exists():
+                import urllib.request
+
+                data = urllib.request.urlopen(e["url"], timeout=120).read()
+                local = mirror_dir / f".bf-{date}.pdf"
+                local.write_bytes(data)
+            local_sha = _sha256(local)
+            name = f"pr-{date}.pdf"
+            if name in assets:
+                name = f"pr-{date}-{local_sha[:8]}.pdf"
+            if name not in assets:
+                _upload(client, token, repo, rid, name, local, "application/pdf")
+                assets[name] = -1
+                stats["pdfs_uploaded"] += 1
+            entries.append(
+                {
+                    "date": date,
+                    "source_url": e["url"],
+                    "sha256": local_sha,
+                    "mirror_manifest_sha256": sha,
+                    "hash_mismatch": local_sha != sha,
+                    "size_bytes": local.stat().st_size,
+                    "pdf_asset": name,
+                    "population_sha256": None,
+                    "population_asset": None,
+                    "origin": f"backfill-{e['origin']}",
+                    "ajourfort": e.get("ajourfort"),
+                }
+            )
+            known.add((date, local_sha))
+            changed = True
 
     if changed or MANIFEST_ASSET not in assets:
         if MANIFEST_ASSET in assets and assets[MANIFEST_ASSET] > 0:

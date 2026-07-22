@@ -51,17 +51,30 @@ def enrich(
 
 
 @app.command()
+def backfill(
+    manifest: Path = typer.Argument(...),
+    store: Path = typer.Argument(...),
+    pdf_dir: Path = typer.Option(None, "--pdf-dir"),
+) -> None:
+    parsed = datasets.parse_backfill(manifest, store, pdf_dir)
+    typer.echo(f"backfilled {len(parsed)} snapshots: {parsed}")
+
+
+@app.command()
 def archive(
     mirror: Path = typer.Argument(...),
     repo: str = typer.Option(..., "--repo"),
     tag: str = typer.Option("pdf-archive", "--tag"),
+    backfill_manifest: Path = typer.Option(None, "--backfill"),
+    pdf_dir: Path = typer.Option(None, "--pdf-dir"),
 ) -> None:
     token = os.environ.get("STV_GITHUB_TOKEN") or os.environ.get("GITHUB_TOKEN")
     if not token:
         raise typer.Exit(code=2)
     from .archive import archive_mirror
 
-    stats = archive_mirror(mirror, repo, token, tag=tag)
+    stats = archive_mirror(mirror, repo, token, tag=tag,
+                           backfill_manifest=backfill_manifest, pdf_dir=pdf_dir)
     typer.echo(json.dumps(stats))
 
 

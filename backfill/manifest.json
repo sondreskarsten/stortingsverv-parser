@@ -1,0 +1,387 @@
+[
+ {
+  "date": "2011-07-29",
+  "url": "https://web.archive.org/web/20110814024149id_/http://www.stortinget.no/Global/pdf/Diverse/verv%20og%20%c3%b8konomiske%20interesser.pdf",
+  "origin": "wayback",
+  "sha256": "0993bef7d84a9acef284660d636f264ac30e12bb970ecaea3eebae5b8f01e7a7",
+  "ajourfort": "2011-07-29",
+  "dataset": true
+ },
+ {
+  "date": "2016-12-19",
+  "url": "https://web.archive.org/web/20170114231330id_/https://www.stortinget.no/globalassets/pdf/verv_oekonomiske_interesser_register/register-for-stortingsrepresentantene-og-regjeringsmedlemmenes-verv-og-okonomiske-interesser.pdf",
+  "origin": "wayback",
+  "sha256": "103cb8d37d0729bd0c05c8f743179d20e288ed2bf98de3e44d05c0ae4c8674a3",
+  "ajourfort": "2016-12-19",
+  "dataset": true
+ },
+ {
+  "date": "2017-11-20",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2017-2018/pr-20-november-2017.pdf",
+  "origin": "live-arkiv",
+  "sha256": "6356f8fe79d896ba25799ebc454113123117b7df111b9b10a063e35600b2f783",
+  "ajourfort": "2017-11-20",
+  "dataset": true
+ },
+ {
+  "date": "2017-12-20",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2017-2018/pr-20-desember-2017.pdf",
+  "origin": "live-arkiv",
+  "sha256": "a4a53ca860fe744310318c95a4d6f331ad89aba21a5f7eac3ab5bd80f64bec07",
+  "ajourfort": "2017-12-19",
+  "dataset": true
+ },
+ {
+  "date": "2018-01-31",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2017-2018/pr-31-januar-2018.pdf",
+  "origin": "live-arkiv",
+  "sha256": "b616b1207e8688f23a698752cfb519ac04039df23ccf3f6e59cd6094bcc135d4",
+  "ajourfort": "2018-01-31",
+  "dataset": true
+ },
+ {
+  "date": "2018-03-21",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2017-2018/pr-21-mars-2018.pdf",
+  "origin": "live-arkiv",
+  "sha256": "958220e9a374ee0c6a423f8c706c8d1be270aa68656c4cee585e87cc4d03c5a7",
+  "ajourfort": "2018-03-21",
+  "dataset": true
+ },
+ {
+  "date": "2018-04-26",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2017-2018/pr-26-april-2018.pdf",
+  "origin": "live-arkiv",
+  "sha256": "5ee9390f9ed1db68cfcb53725558b16b6b1da6c6828a0c9647ef2a25fcfd30b2",
+  "ajourfort": "2018-04-26",
+  "dataset": true
+ },
+ {
+  "date": "2018-05-30",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2017-2018/pr-30-mai-2018.pdf",
+  "origin": "live-arkiv",
+  "sha256": "1f3486b8b5778d2a246d5562b10a37c9445471c76030349fdd72abea10e68f14",
+  "ajourfort": "2018-05-30",
+  "dataset": true
+ },
+ {
+  "date": "2018-06-26",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2017-2018/pr-26-juni-2018.pdf",
+  "origin": "live-arkiv",
+  "sha256": "2ef1eac5562ba73dd7c82e00c296b867e9dbc85db51d8dd2b784b8adf7a23ff8",
+  "ajourfort": "2018-06-26",
+  "dataset": true
+ },
+ {
+  "date": "2018-09-25",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2017-2018/pr.-25-september-2018.pdf",
+  "origin": "live-arkiv",
+  "sha256": "236cd572270679b5a714e9429f4624878c5de6e71e46a8abd17e4738c3382667",
+  "ajourfort": "2018-09-25",
+  "dataset": true
+ },
+ {
+  "date": "2018-10-25",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2018-2019/pr.-25.-oktober-2018.pdf",
+  "origin": "live-arkiv",
+  "sha256": "4b00735931a21cbac47032ce727dc709767c31ff498d9571709fe2587b2bc271",
+  "ajourfort": "2018-10-25",
+  "dataset": true
+ },
+ {
+  "date": "2018-11-30",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2018-2019/pr.-30-november-2018.pdf",
+  "origin": "live-arkiv",
+  "sha256": "804e1150f4575d449bd4aace3863b3dce8495824e18b9d71e6841d5ab3871ca1",
+  "ajourfort": "2018-11-30",
+  "dataset": true
+ },
+ {
+  "date": "2019-01-09",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2018-2019/pr.-9-januar-2019.pdf",
+  "origin": "live-arkiv",
+  "sha256": "7fedb088785463a0b00ade7614e2fa116100a4811aa776ee374babe47bcf542b",
+  "ajourfort": "2019-01-09",
+  "dataset": true
+ },
+ {
+  "date": "2019-02-13",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2018-2019/pr.-13-februar-2019.pdf",
+  "origin": "live-arkiv",
+  "sha256": "34f3a3c648bd5727818f15959b1cc88c06ead9b2e122c14b5285d4f5eead48d0",
+  "ajourfort": "2019-02-13",
+  "dataset": true
+ },
+ {
+  "date": "2019-03-15",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2018-2019/pr.-15-mars-2019.pdf",
+  "origin": "live-arkiv",
+  "sha256": "ed633353dea015a23b335d1a392e5d0322aeef7fb75668d8d4a8b4a621382ec9",
+  "ajourfort": "2019-03-15",
+  "dataset": true
+ },
+ {
+  "date": "2019-04-12",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2018-2019/pr.-12-april-2019.pdf",
+  "origin": "live-arkiv",
+  "sha256": "4b9ba5ad9da982fe52dfddce9c2a1136fc30dee32c62a3eb5364e7c8dca7f9bf",
+  "ajourfort": "2019-04-12",
+  "dataset": true
+ },
+ {
+  "date": "2019-05-15",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2018-2019/pr.-15.-mai-2019.pdf",
+  "origin": "live-arkiv",
+  "sha256": "13bea26f5c9f5055442e92e156209270f6362b4f7e2065a261168a0fb0f824ac",
+  "ajourfort": "2019-05-15",
+  "dataset": true
+ },
+ {
+  "date": "2019-06-28",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2018-2019/pr.-28-juni-2019.pdf",
+  "origin": "live-arkiv",
+  "sha256": "61d95316060901853cbd5b4fe6721c14290b66c1581eec1af74d82be2a472a74",
+  "ajourfort": "2019-06-28",
+  "dataset": true
+ },
+ {
+  "date": "2019-10-16",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2019-2020/pr.-16-okt-2019.pdf",
+  "origin": "live-arkiv",
+  "sha256": "3eea94f7a6dd65610c23919c974151bb11c492cdd50fc2709a065a660d027cff",
+  "ajourfort": "2019-10-16",
+  "dataset": true
+ },
+ {
+  "date": "2019-11-19",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2019-2020/pr-19-nov-2019.pdf",
+  "origin": "live-arkiv",
+  "sha256": "e3a0ab42ae4084773e9932ca7d45b6525ba50868433994aceecc49e5f5319950",
+  "ajourfort": "2019-11-19",
+  "dataset": true
+ },
+ {
+  "date": "2019-12-18",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2019-2020/pr.-18.-des-2019.pdf",
+  "origin": "live-arkiv",
+  "sha256": "94193c17147e1822d4b8e7f3ae65a1aeaab30b843dac0dfb7830d53b00f0a2b7",
+  "ajourfort": "2019-12-18",
+  "dataset": true
+ },
+ {
+  "date": "2020-01-30",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2019-2020/pr.-30.-januar-2020.pdf",
+  "origin": "live-arkiv",
+  "sha256": "a75a46ce66414065b17aaaef82ce0650e6c314b3f4bebbada0007d0403624a93",
+  "ajourfort": "2020-01-30",
+  "dataset": true
+ },
+ {
+  "date": "2020-02-27",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2019-2020/pr.-27-februar-2020.pdf",
+  "origin": "live-arkiv",
+  "sha256": "3b135974649127d63124cafb33985950f6b10894cfa7f0833900b0be138a5f57",
+  "ajourfort": "2020-02-27",
+  "dataset": true
+ },
+ {
+  "date": "2020-03-23",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2019-2020/pr.-23.-mars-2020.pdf",
+  "origin": "live-arkiv",
+  "sha256": "cf4906c333c326610d99b89bfd910f1940f283201c2f5e6db8aba9e54ed93166",
+  "ajourfort": "2020-03-23",
+  "dataset": true
+ },
+ {
+  "date": "2020-03-23",
+  "url": "https://web.archive.org/web/20200414024949id_/https://www.stortinget.no/globalassets/pdf/verv_oekonomiske_interesser_register/verv_ok_interesser.pdf",
+  "origin": "wayback",
+  "sha256": "3a94827b0d692975e16892fc6cc5b9b868210d06ab205a5418806bae1a87eb72",
+  "ajourfort": "2020-03-23",
+  "dataset": false,
+  "alternate_of": "2020-03-23"
+ },
+ {
+  "date": "2020-04-29",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2019-2020/pr.-29.-april-2020.pdf",
+  "origin": "live-arkiv",
+  "sha256": "1926a0c609c5364a476f2e134194239bb2ffd0d220cf97efcf5a1a43c833cec1",
+  "ajourfort": "2020-04-29",
+  "dataset": true
+ },
+ {
+  "date": "2020-05-27",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2019-2020/pr.-27.-mai-2020.pdf",
+  "origin": "live-arkiv",
+  "sha256": "2a2ce52aad8df298d796aa701d0900ec74fa18ee767c752969fc383b75d363e7",
+  "ajourfort": "2020-05-27",
+  "dataset": true
+ },
+ {
+  "date": "2020-06-26",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2019-2020/pr.-26.-juni-2020.pdf",
+  "origin": "live-arkiv",
+  "sha256": "796d44ea0def63e8327fd2b5c55ac7100a117bf7f3e10f46abc0184d9914cd62",
+  "ajourfort": "2020-06-26",
+  "dataset": true
+ },
+ {
+  "date": "2020-09-24",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2019-2020/pr.-24.-sept-2020.pdf",
+  "origin": "live-arkiv",
+  "sha256": "e2605d2148569f97407684f3599cfe3245ad4a184dd736f368672f95004bf141",
+  "ajourfort": "2020-09-24",
+  "dataset": true
+ },
+ {
+  "date": "2020-10-29",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2020-2021/pr.-29-okt-2020.pdf",
+  "origin": "live-arkiv",
+  "sha256": "b1624a9f4405c075b5370e135ae177319d8e4e20e196bd457837994600ca4643",
+  "ajourfort": "2020-10-29",
+  "dataset": true
+ },
+ {
+  "date": "2020-11-25",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2020-2021/pr.-25-nov-2020.pdf",
+  "origin": "live-arkiv",
+  "sha256": "fd0f42fdf6b4a565727fab4f5dc93d790a20e7e0586a4137c19691f8070aaab3",
+  "ajourfort": "2020-11-25",
+  "dataset": true
+ },
+ {
+  "date": "2020-12-17",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2020-2021/pr.-17.-des-2020.pdf",
+  "origin": "live-arkiv",
+  "sha256": "6a7d238f8bb9f195a05bb88dfa1a51ae8109c8bee0921a948660d5b190ecaad6",
+  "ajourfort": "2020-12-17",
+  "dataset": true
+ },
+ {
+  "date": "2021-01-27",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2020-2021/pr.-27.-jan-2021.pdf",
+  "origin": "live-arkiv",
+  "sha256": "7c2b32febcdec5f26c8a81617c3a62d78c98b10bca68d54bb9c18df39b2ac0d6",
+  "ajourfort": "2021-01-27",
+  "dataset": true
+ },
+ {
+  "date": "2021-03-02",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2020-2021/pr.-2.-mars-2021.pdf",
+  "origin": "live-arkiv",
+  "sha256": "54dcf7c3af52d313c3c4c39350a51bf308cff05e29d1c558745ae6cb23689319",
+  "ajourfort": "2021-03-02",
+  "dataset": true
+ },
+ {
+  "date": "2021-03-25",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2020-2021/pr.-25.-mars-2021.pdf",
+  "origin": "live-arkiv",
+  "sha256": "b5679b894439a05b83cd71a26e71f42a4e0ae8a742fa6e10b2c0837104f9cc7b",
+  "ajourfort": "2021-03-25",
+  "dataset": true
+ },
+ {
+  "date": "2021-04-27",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2020-2021/pr.-27.-april-2021.pdf",
+  "origin": "live-arkiv",
+  "sha256": "7562ec58c41b76a3cfbfffc4f51828c47245d55822a3fc5599579168a95643b7",
+  "ajourfort": "2021-04-27",
+  "dataset": true
+ },
+ {
+  "date": "2021-06-25",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2020-2021/pr.-25.-juni-2021.pdf",
+  "origin": "live-arkiv",
+  "sha256": "3c5beb1dbde74d6e8ab5c218c8239cd9273b33ace511abacb1d296bf9c72cded",
+  "ajourfort": "2021-06-25",
+  "dataset": true
+ },
+ {
+  "date": "2021-09-01",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2020-2021/pr.-1.-sept.-2021.pdf",
+  "origin": "live-arkiv",
+  "sha256": "06efec076775147a6ade463c7d6dc44ca0aee72a4228bb51282ade861209e92f",
+  "ajourfort": "2021-09-01",
+  "dataset": true
+ },
+ {
+  "date": "2021-09-29",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2020-2021/pr.-29.-sept.-2021.pdf",
+  "origin": "live-arkiv",
+  "sha256": "ba1f79ef57e3d01eed5ce903a0e2ba5b7b8edbe0b1f7dc1ef08b7022f3c59012",
+  "ajourfort": "2021-09-29",
+  "dataset": true
+ },
+ {
+  "date": "2021-11-19",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2021-2022/pr.-19.-nov-2021.pdf",
+  "origin": "live-arkiv",
+  "sha256": "11678b7cdbb2c07bb67fac014276991c82e2e0a83da51a42e40827e35a094529",
+  "ajourfort": "2021-11-19",
+  "dataset": true
+ },
+ {
+  "date": "2021-12-21",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2021-2022/pr.-21.-des-2021.pdf",
+  "origin": "live-arkiv",
+  "sha256": "8630a311e787799bb557a1a2afc6aa52eb5a0af7e4498ae909c87c17c4bb4f12",
+  "ajourfort": "2021-12-21",
+  "dataset": true
+ },
+ {
+  "date": "2022-01-27",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2021-2022/pr.-27.-jan-2022.pdf",
+  "origin": "live-arkiv",
+  "sha256": "e76c6df5974c6a933a0c51397c35453b9eaad6477724f6218a63c1113c7aad71",
+  "ajourfort": "2022-01-27",
+  "dataset": true
+ },
+ {
+  "date": "2022-02-18",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2021-2022/pr.-18.-feb-2022.pdf",
+  "origin": "live-arkiv",
+  "sha256": "dc2e8adf172124cb75ebb4ead861e796c0e45ed81f1ad89a2adc7968edd12e11",
+  "ajourfort": "2022-02-18",
+  "dataset": true
+ },
+ {
+  "date": "2022-03-23",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2021-2022/pr.-23.-mars-2022.pdf",
+  "origin": "live-arkiv",
+  "sha256": "bd1ecaa33b8f2fa63a2012a56992b875e591a9e98307dc8c822c00681e636dc6",
+  "ajourfort": "2022-03-23",
+  "dataset": true
+ },
+ {
+  "date": "2022-04-29",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2021-2022/pr.-29.-april-2022.pdf",
+  "origin": "live-arkiv",
+  "sha256": "5eb4324f5600a37d33873d7a43c9cf97532247248484a35aaf99604502aa7315",
+  "ajourfort": "2022-04-29",
+  "dataset": true
+ },
+ {
+  "date": "2022-05-19",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2021-2022/pr.-19.-mai-2022.pdf",
+  "origin": "live-arkiv",
+  "sha256": "fa085f7b264e4359fd5ab46444936ab81fddd27584c1511bcf534a828bad7773",
+  "ajourfort": "2022-05-19",
+  "dataset": true
+ },
+ {
+  "date": "2022-06-22",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2021-2022/pr.-22.-juni-2022.pdf",
+  "origin": "live-arkiv",
+  "sha256": "b8225992e771e7ba9f0fc1c4aeec164735b7733dcd258f35ef0912a47852e5d0",
+  "ajourfort": "2022-06-22",
+  "dataset": true
+ },
+ {
+  "date": "2022-08-31",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2021-2022/pr.-31.-aug-2022.pdf",
+  "origin": "live-arkiv",
+  "sha256": "9a3379bbd0254c08942549369d785c9c2ee7be67b3761f547dd1b5e50572069e",
+  "ajourfort": "2022-08-31",
+  "dataset": true
+ }
+]

@@ -51,7 +51,7 @@ jobs:
       - name: Archive source PDFs
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: uv run stortingsverv archive ./mirror --repo ${{ github.repository }}
+        run: uv run stortingsverv archive ./mirror --repo ${{ github.repository }} --backfill backfill/manifest.json
 
       - name: Restore parsed store
         run: |
@@ -60,6 +60,9 @@ jobs:
 
       - name: Parse new snapshots
         run: uv run stortingsverv parse ./mirror ./store
+
+      - name: Backfill pre-2022 snapshots
+        run: uv run stortingsverv backfill backfill/manifest.json ./store
 
       - name: Enrich via GitHub Models
         env:

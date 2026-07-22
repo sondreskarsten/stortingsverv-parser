@@ -230,3 +230,55 @@ def build(store_dir: Path, out_dir: Path, cache_dir: Path) -> dict:
     }
     (out_dir / "qa_report.json").write_text(json.dumps(qa, indent=2, ensure_ascii=False))
     return qa
+
+
+def read_backfill(path: Path) -> list[dict]:
+    return [e for e in json.loads(Path(path).read_text()) if e.get("dataset")]
+
+
+def parse_backfill(manifest_path: Path, store_dir: Path, pdf_dir: Path | None = None) -> list[str]:
+    import hashlib
+    import urllib.request
+
+    parsed: list[str] = []
+    for e in read_backfill(manifest_path):
+        date = e["date"]
+        snap_dir = store_dir / date
+        meta_path = snap_dir / "meta.json"
+        if meta_path.exists():
+            meta = json.loads(meta_path.read_text())
+            if meta.get("file_hash") == e["sha256"] and meta.get("parser_version") == PARSER_VERSION:
+                continue
+        local = (pdf_dir / f"pr-{date}.pdf") if pdf_dir else None
+        if local is not None and local.exists():
+            data = local.read_bytes()
+        else:
+            data = urllib.request.urlopen(e["url"], timeout=120).read()
+        digest = hashlib.sha256(data).hexdigest()
+        if digest != e["sha256"]:
+            raise ValueError(f"backfill sha mismatch for {date}: {digest}")
+        tmp = store_dir / f".backfill-{date}.pdf"
+        store_dir.mkdir(parents=True, exist_ok=True)
+        tmp.write_bytes(data)
+        parse = parse_document(str(tmp))
+        tmp.unlink()
+        tables = carve.tables_for_document(date, e["url"], e["sha256"], parse)
+        snap_dir.mkdir(parents=True, exist_ok=True)
+        for name in TABLE_NAMES:
+            pq.write_table(carve.to_table(name, tables[name]), snap_dir / f"{name}.parquet")
+        meta_path.write_text(
+            json.dumps(
+                {
+                    "date": date,
+                    "file_hash": e["sha256"],
+                    "parser_version": PARSER_VERSION,
+                    "n_persons": len(parse.persons),
+                    "n_remainder_lines": len(parse.remainder),
+                    "population_count": None,
+                    "origin": f"backfill-{e['origin']}",
+                    "ajourfort": e.get("ajourfort"),
+                }
+            )
+        )
+        parsed.append(date)
+    return parsed
