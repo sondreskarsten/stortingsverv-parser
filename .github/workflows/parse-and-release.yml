@@ -48,6 +48,11 @@ jobs:
       - name: Sync PDF mirror
         run: uv run stortinget-register sync ./mirror --start-year 2021 --max-runtime 25 --log-level INFO
 
+      - name: Archive source PDFs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: uv run stortingsverv archive ./mirror --repo ${{ github.repository }}
+
       - name: Restore parsed store
         run: |
           gh release download data-latest -p 'store.tar.zst' || true

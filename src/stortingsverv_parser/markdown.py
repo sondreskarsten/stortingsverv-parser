@@ -55,6 +55,7 @@ def export_markdown(store_dir: Path, out_dir: Path, cache_dir: Path) -> dict:
         doc_rows.append(
             [
                 f"[{m['date']}]({url_row['url']})",
+                f"[pdf](../../../releases/download/pdf-archive/pr-{m['date']}.pdf)",
                 url_row["n_pages"],
                 m["n_persons"],
                 m.get("population_count"),
@@ -63,9 +64,12 @@ def export_markdown(store_dir: Path, out_dir: Path, cache_dir: Path) -> dict:
         )
     (out_dir / "documents.md").write_text(
         "# Publications\n\nOne row per register publication, newest first. "
-        "Date links to the source PDF on stortinget.no.\n\n"
+        "Date links to the source PDF on stortinget.no; archived links to the "
+        "sha256-verified copy on the pdf-archive release, kept in case the "
+        "source disappears. archive_manifest.json on that release resolves "
+        "hash-exact assets, including any replaced versions.\n\n"
         + _md_table(
-            ["date", "pages", "persons parsed", "population roster", "remainder lines"],
+            ["date", "archived", "pages", "persons parsed", "population roster", "remainder lines"],
             doc_rows,
         )
     )

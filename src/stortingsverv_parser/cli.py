@@ -50,6 +50,21 @@ def enrich(
     typer.echo(json.dumps(stats))
 
 
+@app.command()
+def archive(
+    mirror: Path = typer.Argument(...),
+    repo: str = typer.Option(..., "--repo"),
+    tag: str = typer.Option("pdf-archive", "--tag"),
+) -> None:
+    token = os.environ.get("STV_GITHUB_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    if not token:
+        raise typer.Exit(code=2)
+    from .archive import archive_mirror
+
+    stats = archive_mirror(mirror, repo, token, tag=tag)
+    typer.echo(json.dumps(stats))
+
+
 @app.command(name="export-md")
 def export_md(
     store: Path = typer.Argument(...),

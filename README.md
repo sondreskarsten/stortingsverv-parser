@@ -46,6 +46,21 @@ a new publication only appends rows at its own date. Cross-snapshot meaning
 `qa_report.json` carries per-snapshot person counts against the population
 roster, remainder line counts and enrichment coverage.
 
+## Provenance and PDF archive
+
+Every dataset row traces to its source binary: `documents` carries the
+publication's stortinget.no url and sha256 (`file_hash`), and the
+[`pdf-archive` release](../../releases/tag/pdf-archive) stores every PDF
+and population snapshot sha256-verified, independent of whether
+stortinget.no keeps serving them. Assets are date-named
+(`pr-YYYY-MM-DD.pdf`); if a date's content is ever replaced upstream, the
+new bytes are archived additionally under a hash-suffixed name and the
+first observation is never overwritten. `archive_manifest.json` on that
+release maps every (date, sha256) pair to its asset and flags any mismatch
+between the mirror manifest hash and the archived bytes. The workflow
+archives before parsing, so a publication is preserved even if a later
+step fails.
+
 `store.tar.zst` is the internal per-snapshot store (one immutable directory
 per publication, keyed on file hash and parser version) used for incremental
 runs.
