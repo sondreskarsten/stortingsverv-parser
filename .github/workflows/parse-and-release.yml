@@ -59,6 +59,7 @@ jobs:
           if [ -f store.tar.zst ]; then tar --zstd -xf store.tar.zst; fi
 
       - name: Collect SMK register
+        continue-on-error: true
         run: uv run stortingsverv smk-collect smk/manifest.json --pdf-dir ./smk_pdfs
 
       - name: Parse SMK snapshots

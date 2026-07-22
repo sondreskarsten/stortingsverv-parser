@@ -16,6 +16,7 @@ from __future__ import annotations
 import hashlib
 import json
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -88,12 +89,23 @@ def read_manifest(path: Path) -> list[dict]:
     return json.loads(path.read_text())
 
 
+def _get(url: str, timeout: int, tries: int = 3) -> bytes:
+    for i in range(tries):
+        try:
+            return urllib.request.urlopen(
+                urllib.request.Request(url, headers=UA), timeout=timeout
+            ).read()
+        except (urllib.error.URLError, TimeoutError):
+            if i == tries - 1:
+                raise
+            time.sleep(20)
+    raise RuntimeError
+
+
 def collect(manifest_path: Path, pdf_dir: Path) -> list[dict]:
     manifest = read_manifest(manifest_path)
     known_digests = {e["digest"] for e in manifest}
-    raw = urllib.request.urlopen(
-        urllib.request.Request(CDX, headers=UA), timeout=90
-    ).read()
+    raw = _get(CDX, timeout=90)
     rows = json.loads(raw)[1:]
     seen: dict[str, str] = {}
     for ts, digest in rows:
@@ -103,9 +115,7 @@ def collect(manifest_path: Path, pdf_dir: Path) -> list[dict]:
     for digest, ts in sorted(seen.items(), key=lambda kv: kv[1]):
         if digest in known_digests:
             continue
-        data = urllib.request.urlopen(
-            urllib.request.Request(_wayback_url(ts), headers=UA), timeout=180
-        ).read()
+        data = _get(_wayback_url(ts), timeout=180)
         if data[:4] != b"%PDF":
             continue
         local = pdf_dir / f"smk_{ts}.pdf"
@@ -198,10 +208,7 @@ def parse_missing(manifest_path: Path, pdf_dir: Path, store_dir: Path) -> list[s
                 continue
         local = pdf_dir / f"smk_{e['wayback_ts']}.pdf"
         if not local.exists():
-            data = urllib.request.urlopen(
-                urllib.request.Request(_wayback_url(e["wayback_ts"]), headers=UA),
-                timeout=180,
-            ).read()
+            data = _get(_wayback_url(e["wayback_ts"]), timeout=180)
             pdf_dir.mkdir(parents=True, exist_ok=True)
             local.write_bytes(data)
         digest = hashlib.sha256(local.read_bytes()).hexdigest()
