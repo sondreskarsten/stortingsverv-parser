@@ -126,3 +126,13 @@ sitting government, so past external ministers have no API record in the
 pool. The mirror-era population JSON cross-check in `qa_report.json`
 remains null for backfill snapshots; the roster table supersedes it for
 identity purposes.
+
+Name-change linking is deliberately paused. Looser methods (surname-token
+intersection, unique-given-name) recovered true surname changes but an
+audit showed they also produce false links (a 1972-born minister mapped to
+a 2003-born namesake via given-name uniqueness plus context). When
+resumed, two safeguards are required before any link is admitted: the old
+and the new printed name must never co-occur in the same snapshot, and
+the person key must be anchored on foedselsdato, which is immutable and
+near-unique in this space (two collisions in 2,831), rather than on
+names. Until then the roster ships only the conservative methods.

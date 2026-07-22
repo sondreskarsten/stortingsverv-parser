@@ -15,7 +15,7 @@ from dataclasses import dataclass, field
 
 import pdfplumber
 
-PARSER_VERSION = "1.1.0"
+PARSER_VERSION = "1.2.0"
 
 NUMERIC_MARKER_RE = re.compile(r"\d{1,2}\.")
 
@@ -254,13 +254,21 @@ def parse_document(pdf_path: str) -> DocumentParse:
         nxt = lines[idx + 1] if idx + 1 < len(lines) else None
         if (
             line.page >= 1
-            and line.size >= HEADING_MIN_SIZE
             and line.x0 <= LEFT_MARGIN_MAX_X0
-            and len(line.words) <= 2
             and nxt is not None
             and nxt.bold
             and nxt.size >= BODY_MIN_SIZE
             and nxt.x0 <= LEFT_MARGIN_MAX_X0
+            and (
+                (line.size >= HEADING_MIN_SIZE and len(line.words) <= 2)
+                or (
+                    line.bold
+                    and line.size >= BODY_MIN_SIZE
+                    and len(line.words) == 1
+                    and "," not in line.text
+                    and "(" not in line.text
+                )
+            )
         ):
             heading = line.text
             person = None
