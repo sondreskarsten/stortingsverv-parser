@@ -399,5 +399,29 @@
   "sha256": "9a3379bbd0254c08942549369d785c9c2ee7be67b3761f547dd1b5e50572069e",
   "ajourfort": "2022-08-31",
   "dataset": true
+ },
+ {
+  "date": "2022-12-20",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2022-2023/pr.-20.-desember-2022.pdf",
+  "origin": "live-arkiv",
+  "sha256": "f7adbfab368e3c74ef8d26a5794c1c8978aa08f1ea9473e393978d16fa3b9e1a",
+  "ajourfort": "2022-12-20",
+  "dataset": true
+ },
+ {
+  "date": "2023-08-02",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2022-2023/pr.-2.-aug.-2023.pdf",
+  "origin": "live-arkiv",
+  "sha256": "1211ec17169b3e09a12ab2920fe8afa0c1f68dae8710bfdc82c864d203720f15",
+  "ajourfort": "2023-08-02",
+  "dataset": true
+ },
+ {
+  "date": "2026-04-12",
+  "url": "https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2025-2026/pr-12-april-2026.pdf",
+  "origin": "live-arkiv",
+  "sha256": "4fa1064f13434c64363cdc7543da3996e8e29361677b3baa22382d9aa2f7be9c",
+  "ajourfort": "2026-04-12",
+  "dataset": true
  }
 ]

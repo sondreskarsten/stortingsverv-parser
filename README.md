@@ -8,7 +8,7 @@ The sibling repo
 [parse-stortingsrepresentantenes-verv-og-konomiske-interesser](https://github.com/sondreskarsten/parse-stortingsrepresentantenes-verv-og-konomiske-interesser)
 mirrors the biweekly register PDFs from 2022-10-18 onward. This repo parses
 the PDF text layer into tables and publishes them as GitHub release assets;
-49 earlier publications back to 2011, recovered from the live archive and
+52 publications back to 2011 that its discovery misses, recovered from the live archive and
 the Internet Archive, are pinned in `backfill/manifest.json`, giving the
 datasets a 2011-2026 span. [docs/provenance.md](docs/provenance.md) maps
 the publication regimes, what survives and what is lost. Everything runs on GitHub

@@ -37,10 +37,19 @@ the original spellings return 200.
 
 ## What was recovered
 
-49 publications predating the sibling repo's mirror (which starts
-2022-10-18):
+52 publications outside the sibling repo's mirror (which starts
+2022-10-18 and generates only normalized filenames):
 
 - 45 dated publications, 2017-11-20 to 2022-08-31, all fetched live.
+- 3 mirror-era publications the collector's discovery missed, fetched
+  live: 2023-08-02 (irregular `pr.-2.-aug.-2023.pdf`, proving irregular
+  naming recurs after 2022) and 2026-04-12 (normalized name the
+  gap-fill tier never probed), both found via the landing-page capture
+  timeline, plus 2022-12-20 (irregular `pr.-20.-desember-2022.pdf`)
+  found by variant-probing the only mirror-era months with zero
+  publications. All other cadence gaps (2018-02, 2019-09, 2021-02,
+  2021-05, 2021-10, 2022-09, 2025-10) stayed empty under a
+  1,280-1,920-candidate variant space per month.
   41 were found via the Internet Archive CDX index; 4 more
   (2021-11-19, 2022-03-23, 2022-04-29, 2022-08-31) were never crawled by
   the Archive and were found by brute-forcing the filename variant space
@@ -57,6 +66,21 @@ the live dated 2020-03-23 publication but whose bytes differ (a separate
 export of the same content). One filename/cover mismatch exists in the
 source material itself: the file named `pr-20-desember-2017.pdf` states
 "Ajourført pr. 19. desember 2017" on its cover; the manifest records both.
+
+## Retention asymmetry
+
+Every dated filename ever discovered resolves live on the current server:
+51 of 51 attempts. Retention on the `globalassets` tree appears total; no
+removal policy is in evidence there. The losses are confined to the
+retired `/Global/pdf/` tree, killed wholesale in the ~2014 CMS migration,
+and to rolling files that were overwritten in place. Two further
+sub-regimes are evidenced by landing-page links but have no surviving
+bytes anywhere: a dated file `verv og økonomiske int 2010 03.pdf` (March
+2010, the earliest online publication found) and a dated-filename folder
+`Global/pdf/Verv_Oekonomiske_interesser_register/` (e.g. `2013-2806.pdf`
+for 28 June 2013) that the Internet Archive never crawled. Undiscovered
+dated-era publications, if any exist, are therefore almost certainly
+still live; the bottleneck is learning their filenames, not retention.
 
 ## What is lost
 

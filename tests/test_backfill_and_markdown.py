@@ -9,12 +9,12 @@ MANIFEST = Path(__file__).parent.parent / "backfill" / "manifest.json"
 
 def test_backfill_manifest_integrity():
     entries = json.loads(MANIFEST.read_text())
-    assert len(entries) == 50
-    assert sum(e["dataset"] for e in entries) == 49
+    assert len(entries) == 53
+    assert sum(e["dataset"] for e in entries) == 52
     dates = [e["date"] for e in entries if e["dataset"]]
     assert len(set(dates)) == len(dates)
     assert min(dates) == "2011-07-29"
-    assert max(dates) == "2022-08-31"
+    assert max(dates) == "2026-04-12"
     for e in entries:
         assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", e["date"])
         assert re.fullmatch(r"[0-9a-f]{64}", e["sha256"])
@@ -22,7 +22,6 @@ def test_backfill_manifest_integrity():
         assert e["url"].startswith("https://")
         if not e["dataset"]:
             assert e["alternate_of"] == e["date"]
-    assert all(e["date"] < "2022-10-18" for e in entries)
 
 
 def test_md_escaping():
