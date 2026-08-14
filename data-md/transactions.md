@@ -1,4 +1,4 @@
-# Share transactions, snapshot 2026-06-30
+# Share transactions, snapshot 2026-08-07
 
 Columns are the printed table headers.
 
@@ -36,8 +36,16 @@ Columns are the printed table headers.
 | Kjølmoen, Per Vidar (A, Møre og Romsdal) | §9 | 13.01.2026 | Salg | Vestas | ASA | 0 | 125 | 35622 |
 | Kjølmoen, Per Vidar (A, Møre og Romsdal) | §9 | 13.10.2025 | Salg | Hydro | ASA | 0 | 294 | 20267 |
 | Kristiansen, Jørgen H. (KrF, Aust-Agder) | §9 | 12.11.2025 | Kjøp | Sparebank 1 Sør-Norge | ASA | 1E-05 | 59 | 10300 |
+| Larsen, Erlend (H, Vestfold) | §9 | 20.07.2026 | Kjøp | Telenor | AS | 0 | 150 | 133,8 |
 | Larsen, Erlend (H, Vestfold) | §9 | 30.03.2026 | Salg | eqnr | AS | 0 | 100 | 40191 |
 | Larsen, Erlend (H, Vestfold) | §9 | 02.01.2026 | Salg | Yara | AS |  | 56 | 23181 |
+| Nilsen, Marius Arion (FrP, Aust-Agder) | §9 | 26.05.2026 | Kjøp | Kongsberg Maritime | ASA |  | 24 | 1488,52 |
+| Nilsen, Marius Arion (FrP, Aust-Agder) | §9 | 08.05.2026 | Uspesifise TGS ASA |  | ASA |  | 76 | 146,3 |
+| Nilsen, Marius Arion (FrP, Aust-Agder) | §9 |  | rt |  |  |  |  |  |
+| Nilsen, Marius Arion (FrP, Aust-Agder) | §9 | 30.04.2026 | Kjøp | TGS ASA | ASA |  | 24 | 3566,8 |
+| Nilsen, Marius Arion (FrP, Aust-Agder) | §9 | 30.04.2026 | Kjøp | Kongsberg Maritime | ASA |  | 28 | 1761,24 |
+| Nilsen, Marius Arion (FrP, Aust-Agder) | §9 | 22.04.2026 | Kjøp | Kongsberg Gruppen | ASA |  | 26 | 9744 |
+| Nilsen, Marius Arion (FrP, Aust-Agder) | §9 | 20.04.2026 | Kjøp | Kongsberg | ASA |  | 26 | 9709,4 |
 | Nilsen, Marius Arion (FrP, Aust-Agder) | §9 | 17.04.2026 | Kjøp | Equinor | ASA |  | 36 | 11872 |
 | Nilsen, Marius Arion (FrP, Aust-Agder) | §9 | 17.04.2026 | Kjøp | Kongsberg Gruppen | ASA |  | 53 | 19922 |
 | Nilsen, Marius Arion (FrP, Aust-Agder) | §9 | 17.04.2026 | Kjøp | Kongsberg Gruppen | ASA |  | 26 | 9777 |

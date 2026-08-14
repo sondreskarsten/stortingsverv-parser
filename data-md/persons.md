@@ -1,4 +1,4 @@
-# Persons, snapshot 2026-06-30
+# Persons, snapshot 2026-08-07
 
 | idx | section | name | party | constituency | note | sections | tx rows |
 |---|---|---|---|---|---|---|---|
@@ -83,7 +83,7 @@
 | 79 | Representanter | Krokeide, Finn | FrP | Oppland |  | 1 | 0 |
 | 80 | Representanter | Langfeldt, Morgan | FrP | Buskerud |  | 1 | 0 |
 | 81 | Representanter | Larsen, Bjørn | FrP | Nordland |  | 2 | 0 |
-| 82 | Representanter | Larsen, Erlend | H | Vestfold |  | 5 | 2 |
+| 82 | Representanter | Larsen, Erlend | H | Vestfold |  | 5 | 3 |
 | 83 | Representanter | Lie, Kathy | SV | Buskerud |  | 1 | 0 |
 | 84 | Representanter | Lien, Geir Inge | Sp | Møre og Romsdal | Har ingen registreringspliktige interesser | 0 | 0 |
 | 85 | Representanter | Liland, Ingrid | MDG | Oslo | Ingen registrerte opplysninger | 0 | 0 |
@@ -108,7 +108,7 @@
 | 104 | Representanter | Myrli, Sverre | A | Akershus |  | 4 | 0 |
 | 105 | Representanter | Mørland, Tellef Inge | A | Aust-Agder |  | 2 | 0 |
 | 106 | Representanter | Nielsen, Monica | A | Finnmark |  | 2 | 0 |
-| 107 | Representanter | Nilsen, Marius Arion | FrP | Aust-Agder |  | 3 | 11 |
+| 107 | Representanter | Nilsen, Marius Arion | FrP | Aust-Agder |  | 3 | 18 |
 | 108 | Representanter | Nilsen, Mona | A | Nordland |  | 1 | 0 |
 | 109 | Representanter | Njåstad, Helge André | FrP | Hordaland |  | 3 | 4 |
 | 110 | Representanter | Nordtug, Julia Brännström | FrP | Østfold |  | 1 | 0 |

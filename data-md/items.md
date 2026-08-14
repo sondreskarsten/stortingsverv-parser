@@ -1,4 +1,4 @@
-# Items (model-derived), snapshot 2026-06-30
+# Items (model-derived), snapshot 2026-08-07
 
 Derived layer: blocks split into items by a language model. Coverage 49/503 non-empty blocks (0.0974). Uncovered blocks are absent here but present verbatim in sections.md.
 
