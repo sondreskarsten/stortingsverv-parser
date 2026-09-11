@@ -1,4 +1,4 @@
-# Persons, snapshot 2026-08-21
+# Persons, snapshot 2026-09-04
 
 | idx | section | name | party | constituency | note | sections | tx rows |
 |---|---|---|---|---|---|---|---|
@@ -192,75 +192,77 @@
 | 188 | Regjeringsmedlemmer | Aasland, Sigrun | A |  | Har ingen registreringspliktige interesser | 0 | 0 |
 | 189 | Regjeringsmedlemmer | Aasland, Terje | A | Telemark |  | 1 | 0 |
 | 190 | Vararepresentanter | Akselsen, Ulvar | A | Hordaland |  | 1 | 0 |
-| 191 | Vararepresentanter | Aspaas, Kjell-Arve | A | Sør-Trøndelag |  | 2 | 0 |
-| 192 | Vararepresentanter | Bjuland, Hadle Rasmus | KrF | Rogaland | Ingen registrerte opplysninger | 0 | 0 |
-| 193 | Vararepresentanter | Bjørbæk, Synne Høyforsslett | R | Nordland | Ingen registrerte opplysninger | 0 | 0 |
-| 194 | Vararepresentanter | Bjørnerud, Angelika | FrP | Oslo | Ingen registrerte opplysninger | 0 | 0 |
-| 195 | Vararepresentanter | Breivik, Ane | V | Akershus |  | 1 | 0 |
-| 196 | Vararepresentanter | Bruflot, Sandra | H | Buskerud |  | 1 | 0 |
-| 197 | Vararepresentanter | Bye, Margit | MDG | Oslo | Ingen registrerte opplysninger | 0 | 0 |
-| 198 | Vararepresentanter | Danielsen, Hilde Marie Gaebpie | SV | Sør-Trøndelag | Ingen registrerte opplysninger | 0 | 0 |
-| 199 | Vararepresentanter | Dons-Hansen, Nina | H | Troms |  | 3 | 0 |
-| 200 | Vararepresentanter | Ellingsen, Cato Brunvand | SV | Oslo |  | 4 | 0 |
-| 201 | Vararepresentanter | Elvenes, Hårek | H | Akershus |  | 5 | 0 |
-| 202 | Vararepresentanter | Eskeland, Liv Kari | H | Hordaland |  | 5 | 0 |
-| 203 | Vararepresentanter | Fagervik, Trine | Sp | Nordland | Har ingen registreringspliktige interesser | 0 | 0 |
-| 204 | Vararepresentanter | Fredheim, Lasse Anfinsen | H | Rogaland |  | 2 | 0 |
-| 205 | Vararepresentanter | Friskilæ, Roy-Håkon Skårvik | MDG | Finnmark |  | 2 | 0 |
-| 206 | Vararepresentanter | Gihlemoen, Truls | FrP | Hedmark | Ingen registrerte opplysninger | 0 | 0 |
-| 207 | Vararepresentanter | Gjerde, Kristin Løvaas | FrP | Buskerud |  | 2 | 0 |
-| 208 | Vararepresentanter | Gulli, Georg | KrF | Aust-Agder |  | 3 | 0 |
-| 209 | Vararepresentanter | Hager, Erik | A | Hedmark |  | 1 | 0 |
-| 210 | Vararepresentanter | Hanssen, Mathias Willassen | H | Vestfold |  | 2 | 0 |
-| 211 | Vararepresentanter | Heen, Aleksander Øren | Sp | Sogn og Fjordane |  | 3 | 0 |
-| 212 | Vararepresentanter | Henriksen, Lars Lønberg | MDG | Vestfold | Ingen registrerte opplysninger | 0 | 0 |
-| 213 | Vararepresentanter | Hogstad, Jan Erik | FrP | Vest-Agder | Har ingen registreringspliktige interesser | 0 | 0 |
-| 214 | Vararepresentanter | Holte, Beathe Beckstrøm | FrP | Aust-Agder |  | 2 | 0 |
-| 215 | Vararepresentanter | Horn, Sander Delp | A | Nordland |  | 1 | 0 |
-| 216 | Vararepresentanter | Hovda, Audun Hammer | SV | Buskerud | Ingen registrerte opplysninger | 0 | 0 |
-| 217 | Vararepresentanter | Håland, Christoffer Emberland | A | Rogaland | Ingen registrerte opplysninger | 0 | 0 |
-| 218 | Vararepresentanter | Karlsen, Kamilla Bjerkholt | A | Hordaland |  | 3 | 0 |
-| 219 | Vararepresentanter | Karlsen, Mette-Gro | A | Østfold |  | 2 | 0 |
-| 220 | Vararepresentanter | Kierulf, Henrik Gottfries | H | Sør-Trøndelag |  | 2 | 0 |
-| 221 | Vararepresentanter | Kjøndal, Kjerstin Lianes | KrF | Vest-Agder |  | 1 | 0 |
-| 222 | Vararepresentanter | Kollbotn, Terje | R | Hordaland |  | 2 | 0 |
-| 223 | Vararepresentanter | Kollstrand, Amalie | H | Aust-Agder |  | 5 | 0 |
-| 224 | Vararepresentanter | Krutå, Rune | A | Nordland |  | 2 | 0 |
-| 225 | Vararepresentanter | Lahlum, Hans Olav | SV | Oppland | Ingen registrerte opplysninger | 0 | 0 |
-| 226 | Vararepresentanter | Lassen-Urdahl, Ada | A | Vestfold |  | 2 | 0 |
-| 227 | Vararepresentanter | Liane, Alexander | SV | Vest-Agder |  | 3 | 0 |
-| 228 | Vararepresentanter | Lunde, Heidi Nordby | H | Oslo |  | 5 | 0 |
-| 229 | Vararepresentanter | Lyngstad, Lavrans | A | Finnmark |  | 1 | 0 |
-| 230 | Vararepresentanter | Mehl, Emilie | Sp | Hedmark |  | 5 | 0 |
-| 231 | Vararepresentanter | Mikkelsen, Camilla Renate | R | Troms |  | 1 | 0 |
-| 232 | Vararepresentanter | Moltumyr, Carl-Henrik Myrseth | H | Møre og Romsdal |  | 2 | 0 |
-| 233 | Vararepresentanter | Mossleth, Siv | Sp | Nordland |  | 1 | 0 |
-| 234 | Vararepresentanter | Nakstad, Elin Ileby | H | Østfold |  | 2 | 0 |
-| 235 | Vararepresentanter | Odden, Bengt Halvard | A | Telemark |  | 3 | 0 |
-| 236 | Vararepresentanter | Olafsen, Balder Alvær | SV | Akershus | Ingen registrerte opplysninger | 0 | 0 |
-| 237 | Vararepresentanter | Ormevik, Andreas Breivik | MDG | Hordaland |  | 2 | 0 |
-| 238 | Vararepresentanter | Papas, Alexander | SV | Hordaland |  | 1 | 0 |
-| 239 | Vararepresentanter | Pederssen, Tonje Lavik | FrP | Akershus |  | 1 | 0 |
-| 240 | Vararepresentanter | Reiertsen, Laila | FrP | Hordaland |  | 3 | 0 |
-| 241 | Vararepresentanter | Røsholt, Helene | H | Telemark |  | 3 | 0 |
-| 242 | Vararepresentanter | Sand, Reidar | SV | Rogaland |  | 1 | 0 |
-| 243 | Vararepresentanter | Selvik, Frida Hegranes | A | Sogn og Fjordane | Ingen registrerte opplysninger | 0 | 0 |
-| 244 | Vararepresentanter | Skogmo-Nordvang, Ingunn | FrP | Nordland | Ingen registrerte opplysninger | 0 | 0 |
-| 245 | Vararepresentanter | Snortheim, Håkon | H | Akershus | Ingen registrerte opplysninger | 0 | 0 |
-| 246 | Vararepresentanter | Solhaug, Even | A | Oppland |  | 3 | 0 |
-| 247 | Vararepresentanter | Stamnes, Eivind Yrjan | A | Vestfold | Ingen registrerte opplysninger | 0 | 0 |
-| 248 | Vararepresentanter | Svanøe, Dagfinn Homdal | A | Aust-Agder |  | 1 | 0 |
-| 249 | Vararepresentanter | Sveian, Ole Herman | Sp | Sør-Trøndelag |  | 4 | 0 |
-| 250 | Vararepresentanter | Svenneby, Ola | H | Oslo | Ingen registrerte opplysninger | 0 | 0 |
-| 251 | Vararepresentanter | Sætran, Siv | Sp | Nord-Trøndelag |  | 2 | 0 |
-| 252 | Vararepresentanter | Sætre, Yngve | H | Hedmark |  | 3 | 0 |
-| 253 | Vararepresentanter | Sørensen, Malin Bye | A | Oslo |  | 3 | 0 |
-| 254 | Vararepresentanter | Teigland, Hannah | H | Vest-Agder |  | 3 | 0 |
-| 255 | Vararepresentanter | Tønnesen, Berit | A | Møre og Romsdal |  | 2 | 0 |
-| 256 | Vararepresentanter | Unneland, Andreas Sjalg | SV | Oslo |  | 1 | 0 |
-| 257 | Vararepresentanter | Vea, Marit | V | Oslo |  | 3 | 0 |
-| 258 | Vararepresentanter | Warsame, Fawzi | A | Oslo | Ingen registrerte opplysninger | 0 | 0 |
-| 259 | Vararepresentanter | Wessel, Naomi | R | Rogaland | Ingen registrerte opplysninger | 0 | 0 |
-| 260 | Vararepresentanter | Ytrevik, Sebastian Saltrø | FrP | Vestfold |  | 7 | 0 |
-| 261 | Vararepresentanter | Østensen, Marie | A | Akershus |  | 3 | 0 |
-| 262 | Vararepresentanter | Aaland, Bente Irene | A | Hedmark |  | 2 | 0 |
+| 191 | Vararepresentanter | Aleem, Bisma | SV | Sør-Trøndelag |  | 2 | 0 |
+| 192 | Vararepresentanter | Aspaas, Kjell-Arve | A | Sør-Trøndelag |  | 2 | 0 |
+| 193 | Vararepresentanter | Bjuland, Hadle Rasmus | KrF | Rogaland | Ingen registrerte opplysninger | 0 | 0 |
+| 194 | Vararepresentanter | Bjørbæk, Synne Høyforsslett | R | Nordland | Ingen registrerte opplysninger | 0 | 0 |
+| 195 | Vararepresentanter | Bjørnerud, Angelika | FrP | Oslo | Ingen registrerte opplysninger | 0 | 0 |
+| 196 | Vararepresentanter | Breivik, Ane | V | Akershus |  | 1 | 0 |
+| 197 | Vararepresentanter | Bruflot, Sandra | H | Buskerud |  | 1 | 0 |
+| 198 | Vararepresentanter | Bye, Margit | MDG | Oslo | Ingen registrerte opplysninger | 0 | 0 |
+| 199 | Vararepresentanter | Danielsen, Hilde Marie Gaebpie | SV | Sør-Trøndelag | Ingen registrerte opplysninger | 0 | 0 |
+| 200 | Vararepresentanter | Dons-Hansen, Nina | H | Troms |  | 3 | 0 |
+| 201 | Vararepresentanter | Ellingsen, Cato Brunvand | SV | Oslo |  | 4 | 0 |
+| 202 | Vararepresentanter | Elvenes, Hårek | H | Akershus |  | 5 | 0 |
+| 203 | Vararepresentanter | Eskeland, Liv Kari | H | Hordaland |  | 5 | 0 |
+| 204 | Vararepresentanter | Fagervik, Trine | Sp | Nordland | Har ingen registreringspliktige interesser | 0 | 0 |
+| 205 | Vararepresentanter | Fredheim, Lasse Anfinsen | H | Rogaland |  | 2 | 0 |
+| 206 | Vararepresentanter | Friskilæ, Roy-Håkon Skårvik | MDG | Finnmark |  | 2 | 0 |
+| 207 | Vararepresentanter | Gihlemoen, Truls | FrP | Hedmark | Ingen registrerte opplysninger | 0 | 0 |
+| 208 | Vararepresentanter | Gjerde, Kristin Løvaas | FrP | Buskerud |  | 2 | 0 |
+| 209 | Vararepresentanter | Gulli, Georg | KrF | Aust-Agder |  | 3 | 0 |
+| 210 | Vararepresentanter | Hager, Erik | A | Hedmark |  | 1 | 0 |
+| 211 | Vararepresentanter | Hanssen, Mathias Willassen | H | Vestfold |  | 2 | 0 |
+| 212 | Vararepresentanter | Heen, Aleksander Øren | Sp | Sogn og Fjordane |  | 3 | 0 |
+| 213 | Vararepresentanter | Henriksen, Lars Lønberg | MDG | Vestfold | Ingen registrerte opplysninger | 0 | 0 |
+| 214 | Vararepresentanter | Hogstad, Jan Erik | FrP | Vest-Agder | Har ingen registreringspliktige interesser | 0 | 0 |
+| 215 | Vararepresentanter | Holte, Beathe Beckstrøm | FrP | Aust-Agder |  | 2 | 0 |
+| 216 | Vararepresentanter | Horn, Sander Delp | A | Nordland |  | 1 | 0 |
+| 217 | Vararepresentanter | Hovda, Audun Hammer | SV | Buskerud | Ingen registrerte opplysninger | 0 | 0 |
+| 218 | Vararepresentanter | Håland, Christoffer Emberland | A | Rogaland | Ingen registrerte opplysninger | 0 | 0 |
+| 219 | Vararepresentanter | Karlsen, Kamilla Bjerkholt | A | Hordaland |  | 3 | 0 |
+| 220 | Vararepresentanter | Karlsen, Mette-Gro | A | Østfold |  | 2 | 0 |
+| 221 | Vararepresentanter | Kierulf, Henrik Gottfries | H | Sør-Trøndelag |  | 2 | 0 |
+| 222 | Vararepresentanter | Kjøndal, Kjerstin Lianes | KrF | Vest-Agder |  | 1 | 0 |
+| 223 | Vararepresentanter | Kollbotn, Terje | R | Hordaland |  | 2 | 0 |
+| 224 | Vararepresentanter | Kollstrand, Amalie | H | Aust-Agder |  | 5 | 0 |
+| 225 | Vararepresentanter | Kroken, Marie Kristine | MDG | Sogn og Fjordane | Ingen registrerte opplysninger | 0 | 0 |
+| 226 | Vararepresentanter | Krutå, Rune | A | Nordland |  | 2 | 0 |
+| 227 | Vararepresentanter | Lahlum, Hans Olav | SV | Oppland | Ingen registrerte opplysninger | 0 | 0 |
+| 228 | Vararepresentanter | Lassen-Urdahl, Ada | A | Vestfold |  | 2 | 0 |
+| 229 | Vararepresentanter | Liane, Alexander | SV | Vest-Agder |  | 3 | 0 |
+| 230 | Vararepresentanter | Lunde, Heidi Nordby | H | Oslo |  | 5 | 0 |
+| 231 | Vararepresentanter | Lyngstad, Lavrans | A | Finnmark |  | 1 | 0 |
+| 232 | Vararepresentanter | Mehl, Emilie | Sp | Hedmark |  | 5 | 0 |
+| 233 | Vararepresentanter | Mikkelsen, Camilla Renate | R | Troms |  | 1 | 0 |
+| 234 | Vararepresentanter | Moltumyr, Carl-Henrik Myrseth | H | Møre og Romsdal |  | 2 | 0 |
+| 235 | Vararepresentanter | Mossleth, Siv | Sp | Nordland |  | 1 | 0 |
+| 236 | Vararepresentanter | Nakstad, Elin Ileby | H | Østfold |  | 2 | 0 |
+| 237 | Vararepresentanter | Odden, Bengt Halvard | A | Telemark |  | 3 | 0 |
+| 238 | Vararepresentanter | Olafsen, Balder Alvær | SV | Akershus | Ingen registrerte opplysninger | 0 | 0 |
+| 239 | Vararepresentanter | Ormevik, Andreas Breivik | MDG | Hordaland |  | 2 | 0 |
+| 240 | Vararepresentanter | Papas, Alexander | SV | Hordaland |  | 1 | 0 |
+| 241 | Vararepresentanter | Pederssen, Tonje Lavik | FrP | Akershus |  | 1 | 0 |
+| 242 | Vararepresentanter | Reiertsen, Laila | FrP | Hordaland |  | 3 | 0 |
+| 243 | Vararepresentanter | Røsholt, Helene | H | Telemark |  | 3 | 0 |
+| 244 | Vararepresentanter | Sand, Reidar | SV | Rogaland |  | 1 | 0 |
+| 245 | Vararepresentanter | Selvik, Frida Hegranes | A | Sogn og Fjordane | Ingen registrerte opplysninger | 0 | 0 |
+| 246 | Vararepresentanter | Skogmo-Nordvang, Ingunn | FrP | Nordland | Ingen registrerte opplysninger | 0 | 0 |
+| 247 | Vararepresentanter | Snortheim, Håkon | H | Akershus | Ingen registrerte opplysninger | 0 | 0 |
+| 248 | Vararepresentanter | Solhaug, Even | A | Oppland |  | 3 | 0 |
+| 249 | Vararepresentanter | Stamnes, Eivind Yrjan | A | Vestfold | Ingen registrerte opplysninger | 0 | 0 |
+| 250 | Vararepresentanter | Svanøe, Dagfinn Homdal | A | Aust-Agder |  | 1 | 0 |
+| 251 | Vararepresentanter | Sveian, Ole Herman | Sp | Sør-Trøndelag |  | 4 | 0 |
+| 252 | Vararepresentanter | Svenneby, Ola | H | Oslo | Ingen registrerte opplysninger | 0 | 0 |
+| 253 | Vararepresentanter | Sætran, Siv | Sp | Nord-Trøndelag |  | 2 | 0 |
+| 254 | Vararepresentanter | Sætre, Yngve | H | Hedmark |  | 3 | 0 |
+| 255 | Vararepresentanter | Sørensen, Malin Bye | A | Oslo |  | 3 | 0 |
+| 256 | Vararepresentanter | Teigland, Hannah | H | Vest-Agder |  | 3 | 0 |
+| 257 | Vararepresentanter | Tønnesen, Berit | A | Møre og Romsdal |  | 2 | 0 |
+| 258 | Vararepresentanter | Unneland, Andreas Sjalg | SV | Oslo |  | 1 | 0 |
+| 259 | Vararepresentanter | Vea, Marit | V | Oslo |  | 3 | 0 |
+| 260 | Vararepresentanter | Warsame, Fawzi | A | Oslo | Ingen registrerte opplysninger | 0 | 0 |
+| 261 | Vararepresentanter | Wessel, Naomi | R | Rogaland | Ingen registrerte opplysninger | 0 | 0 |
+| 262 | Vararepresentanter | Ytrevik, Sebastian Saltrø | FrP | Vestfold |  | 7 | 0 |
+| 263 | Vararepresentanter | Østensen, Marie | A | Akershus |  | 3 | 0 |
+| 264 | Vararepresentanter | Aaland, Bente Irene | A | Hedmark |  | 2 | 0 |
