@@ -1,4 +1,4 @@
-# Share transactions, snapshot 2026-09-04
+# Share transactions, snapshot 2026-09-18
 
 Columns are the printed table headers.
 
@@ -17,6 +17,7 @@ Columns are the printed table headers.
 | Eilertsen, Kristian August (FrP, Troms) | §9 | 31.03.2026 | Salg | BlueNord | ASA |  | 1 | 563 |
 | Eilertsen, Kristian August (FrP, Troms) | §9 | 14.01.2026 | Kjøp | BlueNord ASA | ASA |  | 31 | 13595 |
 | Eilertsen, Kristian August (FrP, Troms) | §9 | 05.01.2026 | Kjøp | BlueNord ASA | ASA |  | 34 | 15039 |
+| Jonsterhaug, Martin Virkesdal (FrP, Hordaland) | §9 | 10.09.2026 | Kjøp | Nordic Semiconductor | ASA |  | 2000 | 354569 |
 | Jonsterhaug, Martin Virkesdal (FrP, Hordaland) | §9 | 11.08.2026 | Salg | Equinor | ASA |  | 1500 | 591900,0 |
 | Jonsterhaug, Martin Virkesdal (FrP, Hordaland) | §9 | 27.07.2026 | Kjøp | Equinor | ASA |  | 500 | 185690,9 |
 | Jonsterhaug, Martin Virkesdal (FrP, Hordaland) | §9 | 24.07.2026 | Kjøp | Equinor | ASA |  | 1000 | 386389,2 |
@@ -39,6 +40,7 @@ Columns are the printed table headers.
 | Kjølmoen, Per Vidar (A, Møre og Romsdal) | §9 | 13.01.2026 | Salg | Ørsted | ASA | 0 | 80 | 16954 |
 | Kjølmoen, Per Vidar (A, Møre og Romsdal) | §9 | 13.01.2026 | Salg | Vestas | ASA | 0 | 125 | 35622 |
 | Kjølmoen, Per Vidar (A, Møre og Romsdal) | §9 | 13.10.2025 | Salg | Hydro | ASA | 0 | 294 | 20267 |
+| Kristiansen, Jørgen H. (KrF, Aust-Agder) | §9 | 20.08.2026 | Kjøp | Scatec ASA | ASA |  | 70 | 6741 |
 | Kristiansen, Jørgen H. (KrF, Aust-Agder) | §9 | 12.11.2025 | Kjøp | Sparebank 1 Sør-Norge | ASA | 1E-05 | 59 | 10300 |
 | Larsen, Erlend (H, Vestfold) | §9 | 20.07.2026 | Kjøp | Telenor | AS | 0 | 150 | 133,8 |
 | Larsen, Erlend (H, Vestfold) | §9 | 30.03.2026 | Salg | eqnr | AS | 0 | 100 | 40191 |
@@ -65,6 +67,9 @@ Columns are the printed table headers.
 | Njåstad, Helge André (FrP, Hordaland) | §9 | 04.06.2026 | Kjøp | VINO PIEMONTE AS, | AS |  | 2000 | 114000 |
 | Njåstad, Helge André (FrP, Hordaland) | §9 | 11.12.2025 | Kjøp | DOF Group | ASA |  | 107 | 10032,80 |
 | Njåstad, Helge André (FrP, Hordaland) | §9 | 04.12.2025 | Kjøp | DOF Group | ASA |  | 93 | 8948,40 |
+| Sivertsen, Kristoffer (FrP, Rogaland) | §9 | 02.09.2026 | Kjøp | Take-Two Interactive | Annet |  | 78 | 159304 |
+| Sivertsen, Kristoffer (FrP, Rogaland) | §9 |  |  | Software |  |  |  |  |
+| Sivertsen, Kristoffer (FrP, Rogaland) | §9 | 28.08.2026 | Salg | Yara ASA | ASA |  | 427 | 190869 |
 | Sivertsen, Kristoffer (FrP, Rogaland) | §9 | 07.10.2025 | Salg | Aker Horizons ASA | ASA |  | 14 | 4,16 |
 | Sivertsen, Kristoffer (FrP, Rogaland) | §9 | 07.10.2025 | Salg | Equinor ASA | ASA |  | 1 | 252,6 |
 | Sivertsen, Kristoffer (FrP, Rogaland) | §9 | 07.10.2025 | Salg | Equinor ASA | ASA |  | 43 | 10862 |

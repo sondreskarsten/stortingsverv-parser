@@ -1,4 +1,4 @@
-# Items (model-derived), snapshot 2026-09-04
+# Items (model-derived), snapshot 2026-09-18
 
 Derived layer: blocks split into items by a language model. Coverage 49/507 non-empty blocks (0.0966). Uncovered blocks are absent here but present verbatim in sections.md.
 
@@ -23,15 +23,6 @@ Derived layer: blocks split into items by a language model. Coverage 49/507 non-
 | Foshaug, Nils-Ole (A, Troms) | §5 | Arbeidsforholdet mitt i Målselv kommune som prosjektleder ble avsluttet 1. oktober 2021 | Målselv kommune | prosjektleder |  |  |  |  |  | 2021-10-01 |  |  |
 | Gulati, Himanshu (FrP, Akershus) | §10 | Jeg ble i januar 2019 tildelt æresprisen "Pravasi Bharatiya Samman Award" (diasporaprisen) av presidenten i India. |  |  |  |  |  |  |  | 2019-01 |  | India |
 | Gulati, Himanshu (FrP, Akershus) | §10 | Den indiske regjeringen dekket flybillett og hotell ifm. mottakelse av prisen. | Den indiske regjeringen |  |  |  |  |  |  |  |  |  |
-| Gunaratnam, Kamzy (A, Oslo) | §2 | Nestleder, Oslo Arbeiderparti (Ulønnet) | Oslo Arbeiderparti | Nestleder | Ulønnet |  |  |  |  |  |  |  |
-| Gunaratnam, Kamzy (A, Oslo) | §2 | Styremedlem, Stiftelsen Vålerenga Fotball Samfunn (Ulønnet) | Stiftelsen Vålerenga Fotball Samfunn | Styremedlem | Ulønnet |  |  |  |  |  |  |  |
-| Gunaratnam, Kamzy (A, Oslo) | §3 | Forfatter: "Din kamp er min kamp" Bok-og lydbok (2021-2022) |  | Forfatter |  |  |  |  |  | 2021 | 2022 |  |
-| Gunaratnam, Kamzy (A, Oslo) | §3 | Medforfatter: "Norsk nok" (2022) |  | Medforfatter |  |  |  |  |  | 2022 |  |  |
-| Gunaratnam, Kamzy (A, Oslo) | §3 | Forfatteroppdrag for Deichman Lambertseter (September 2021) | Deichman Lambertseter | Forfatteroppdrag |  |  |  |  |  | 2021-09 |  |  |
-| Gunaratnam, Kamzy (A, Oslo) | §3 | Forfatteroppdrag for Sakprosafestivalen (Oktober 2021) | Sakprosafestivalen | Forfatteroppdrag |  |  |  |  |  | 2021-10 |  |  |
-| Gunaratnam, Kamzy (A, Oslo) | §3 | Forfatteroppdrag for Sakprosafestivalen Kontrast (Mai 2022) | Sakprosafestivalen Kontrast | Forfatteroppdrag |  |  |  |  |  | 2022-05 |  |  |
-| Gunaratnam, Kamzy (A, Oslo) | §3 | Forfatteroppdrag, OsloMet (2022) | OsloMet | Forfatteroppdrag |  |  |  |  |  | 2022 |  |  |
-| Gunaratnam, Kamzy (A, Oslo) | §10 | Timisoara Pride | Sex og politikk | null | null |  |  |  |  | 2022-07 |  | Romania |
 | Haltbrekken, Lars (SV, Sør-Trøndelag) | §3 | Har et enkeltmannsforetak som ikke er aktivt. |  | enkeltmannsforetak |  |  |  |  |  |  |  |  |
 | Haltbrekken, Lars (SV, Sør-Trøndelag) | §5 | Har pensjonsrettigheter fra tiden jeg var leder i Naturvernforbundet | Naturvernforbundet | leder |  |  |  |  |  |  |  |  |
 | Helleland, Trond (H, Buskerud) | §11 | Sølvskål fra Høyre i anledning 50-årsdag 2012 |  |  |  |  |  |  |  |  |  |  |
@@ -68,6 +59,15 @@ Derived layer: blocks split into items by a language model. Coverage 49/507 non-
 | Vedum, Trygve Slagsvold (Sp, Hedmark) | §3 | Gårdbruker. Enkeltpersonforetak tilknyttet drift av Bjørby gård, Stange kommune. | Bjørby gård | Gårdbruker |  |  |  |  |  |  |  |  |
 | Vedum, Trygve Slagsvold (Sp, Hedmark) | §8 | Bjørby gård i Stange kommune (0417-239/1). | Bjørby gård | eiendom i næring |  |  |  |  | 0417-239 |  |  |  |
 | Vedum, Trygve Slagsvold (Sp, Hedmark) | §10 | To dagsreiser til England for å møte representanter for det engelske boligsamvirket og britiske politikere. Betalt av firmaet Hedalm Anebyhus. (I stortingsperioden 2005-2009) | Hedalm Anebyhus | reise |  |  |  |  |  | 2005-01-01 | 2009-12-31 | England |
+| Gunaratnam, Kamzy (A, Oslo) | §2 | Nestleder, Oslo Arbeiderparti (Ulønnet) | Oslo Arbeiderparti | Nestleder | Ulønnet |  |  |  |  |  |  |  |
+| Gunaratnam, Kamzy (A, Oslo) | §2 | Styremedlem, Stiftelsen Vålerenga Fotball Samfunn (Ulønnet) | Stiftelsen Vålerenga Fotball Samfunn | Styremedlem | Ulønnet |  |  |  |  |  |  |  |
+| Gunaratnam, Kamzy (A, Oslo) | §3 | Forfatter: "Din kamp er min kamp" Bok-og lydbok (2021-2022) |  | Forfatter |  |  |  |  |  | 2021 | 2022 |  |
+| Gunaratnam, Kamzy (A, Oslo) | §3 | Medforfatter: "Norsk nok" (2022) |  | Medforfatter |  |  |  |  |  | 2022 |  |  |
+| Gunaratnam, Kamzy (A, Oslo) | §3 | Forfatteroppdrag for Deichman Lambertseter (September 2021) | Deichman Lambertseter | Forfatteroppdrag |  |  |  |  |  | 2021-09 |  |  |
+| Gunaratnam, Kamzy (A, Oslo) | §3 | Forfatteroppdrag for Sakprosafestivalen (Oktober 2021) | Sakprosafestivalen | Forfatteroppdrag |  |  |  |  |  | 2021-10 |  |  |
+| Gunaratnam, Kamzy (A, Oslo) | §3 | Forfatteroppdrag for Sakprosafestivalen Kontrast (Mai 2022) | Sakprosafestivalen Kontrast | Forfatteroppdrag |  |  |  |  |  | 2022-05 |  |  |
+| Gunaratnam, Kamzy (A, Oslo) | §3 | Forfatteroppdrag, OsloMet (2022) | OsloMet | Forfatteroppdrag |  |  |  |  |  | 2022 |  |  |
+| Gunaratnam, Kamzy (A, Oslo) | §10 | Timisoara Pride | Sex og politikk | null | null |  |  |  |  | 2022-07 |  | Romania |
 | Støre, Jonas Gahr (A, Oslo) | §3 | Inntekt fra bokutgivelse "I bevegelse", Cappelen Damm 2014 | Cappelen Damm | inntekt fra bokutgivelse |  |  |  |  |  | 2014 |  |  |
 | Støre, Jonas Gahr (A, Oslo) | §11 | 2 billetter fotballkamp 09.08.2015 fra NOR AS | NOR AS | gave |  |  |  |  |  | 2015-08-09 |  |  |
 | Støre, Jonas Gahr (A, Oslo) | §11 | Madshus - Skipar (Redline Carbon Classic Cold) 08.12.16 | Madshus | gave |  |  |  |  |  | 2016-12-08 |  |  |
