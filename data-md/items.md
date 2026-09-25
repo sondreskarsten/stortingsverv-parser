@@ -1,6 +1,6 @@
-# Items (model-derived), snapshot 2026-09-18
+# Items (model-derived), snapshot 2026-09-22
 
-Derived layer: blocks split into items by a language model. Coverage 49/507 non-empty blocks (0.0966). Uncovered blocks are absent here but present verbatim in sections.md.
+Derived layer: blocks split into items by a language model. Coverage 49/508 non-empty blocks (0.0965). Uncovered blocks are absent here but present verbatim in sections.md.
 
 | person | § | item_text | organisation | role | remuneration | amount_nok | share_pct | share_count | org_number | from | to | country |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
