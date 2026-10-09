@@ -1,6 +1,6 @@
-# Items (model-derived), snapshot 2026-09-22
+# Items (model-derived), snapshot 2026-10-02
 
-Derived layer: blocks split into items by a language model. Coverage 49/508 non-empty blocks (0.0965). Uncovered blocks are absent here but present verbatim in sections.md.
+Derived layer: blocks split into items by a language model. Coverage 48/515 non-empty blocks (0.0932). Uncovered blocks are absent here but present verbatim in sections.md.
 
 | person | § | item_text | organisation | role | remuneration | amount_nok | share_pct | share_count | org_number | from | to | country |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -52,9 +52,6 @@ Derived layer: blocks split into items by a language model. Coverage 49/508 non-
 | Røed, Even A. (A, Buskerud) | §5 | Permisjon, Kongsberg Videregående skole | Kongsberg Videregående skole | Permisjon |  |  |  |  |  |  |  |  |
 | Sande, Erling (Sp, Sogn og Fjordane) | §2 | Styremedlem i Sogn og Fjordane Senterparti | Sogn og Fjordane Senterparti | Styremedlem |  |  |  |  |  |  |  |  |
 | Sande, Erling (Sp, Sogn og Fjordane) | §5 | Eg er i ulønna permisjon frå selskapet Sogn og Fjordane Energi A/S | Sogn og Fjordane Energi A/S | ulønna permisjon |  |  |  |  |  |  |  |  |
-| Solberg, Erna (H, Hordaland) | §2 | Partileder i Høyre (ytelser) | Høyre | Partileder |  |  |  |  |  |  |  |  |
-| Solberg, Erna (H, Hordaland) | §2 | Styremedlem i Global Citizen, 2022 - (ubetalt) | Global Citizen | Styremedlem | ubetalt |  |  |  |  | 2022 |  |  |
-| Solberg, Erna (H, Hordaland) | §2 | Leder av FNs høynivåpanel for flerdimensjonal sårbarhetsindeks for SIDS-land, 2022 - (ubetalt) | FNs høynivåpanel for flerdimensjonal sårbarhetsindeks for SIDS-land | Leder | ubetalt |  |  |  |  | 2022 |  |  |
 | Vedum, Trygve Slagsvold (Sp, Hedmark) | §2 | Leder av Senterpartiet (godtgjørelse) | Senterpartiet | Leder | godtgjørelse |  |  |  |  |  |  |  |
 | Vedum, Trygve Slagsvold (Sp, Hedmark) | §3 | Gårdbruker. Enkeltpersonforetak tilknyttet drift av Bjørby gård, Stange kommune. | Bjørby gård | Gårdbruker |  |  |  |  |  |  |  |  |
 | Vedum, Trygve Slagsvold (Sp, Hedmark) | §8 | Bjørby gård i Stange kommune (0417-239/1). | Bjørby gård | eiendom i næring |  |  |  |  | 0417-239 |  |  |  |

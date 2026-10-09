@@ -4,6 +4,7 @@ One row per register publication, newest first. Date links to the source PDF on 
 
 | date | archived | pages | persons parsed | population roster | remainder lines |
 |---|---|---|---|---|---|
+| [2026-10-02](https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2026-2027/pr-2-oktober-2026.pdf) | [pdf](../../../releases/download/pdf-archive/pr-2026-10-02.pdf) | 73 | 270 | 629 | 0 |
 | [2026-09-22](https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2025-2026/pr-22-september-2026.pdf) | [pdf](../../../releases/download/pdf-archive/pr-2026-09-22.pdf) | 71 | 267 | 629 | 0 |
 | [2026-09-18](https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2025-2026/pr-18-september-2026.pdf) | [pdf](../../../releases/download/pdf-archive/pr-2026-09-18.pdf) | 71 | 265 | 629 | 0 |
 | [2026-09-04](https://www.stortinget.no/globalassets/pdf/verv-og-okonomiske-interesser/arkiv_2025-2026/pr-4-september-2026.pdf) | [pdf](../../../releases/download/pdf-archive/pr-2026-09-04.pdf) | 70 | 264 | 629 | 0 |
