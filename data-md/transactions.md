@@ -1,9 +1,11 @@
-# Share transactions, snapshot 2026-10-02
+# Share transactions, snapshot 2026-10-16
 
 Columns are the printed table headers.
 
 | person | § | Dato | Kjøp/Salg | Selskapsnavn | Ansvarsform | Eierandel (%) | Antall | Verdi (NOK) |
 |---|---|---|---|---|---|---|---|---|
+| Borgli, Pål Morten (FrP, Rogaland) | §9 | 29.09.2026 | Kjøp | Rogaland Sparebank | Annet | 0 | 52 | 7878 |
+| Borgli, Pål Morten (FrP, Rogaland) | §9 | 20.08.2026 | Kjøp | Hoegh Autoliner | ASA | 0 | 107 | 17922,5 |
 | Borgli, Pål Morten (FrP, Rogaland) | §9 | 22.04.2026 | Kjøp | Rogaland Sparebank | Annet | 0,0001 | 375 | 56437,5 |
 | Borgli, Pål Morten (FrP, Rogaland) | §9 | 10.03.2026 | Kjøp | Autostore | AS | 0,0001 | 1312 | 13798,14 |
 | Borgli, Pål Morten (FrP, Rogaland) | §9 | 24.02.2026 | Kjøp | Høegh Autoliners | ASA | 0,0002 | 510 | 62000 |
