@@ -1,4 +1,4 @@
-# Share transactions, snapshot 2026-10-16
+# Share transactions, snapshot 2026-10-30
 
 Columns are the printed table headers.
 
@@ -19,8 +19,10 @@ Columns are the printed table headers.
 | Eilertsen, Kristian August (FrP, Troms) | §9 | 31.03.2026 | Salg | BlueNord | ASA |  | 1 | 563 |
 | Eilertsen, Kristian August (FrP, Troms) | §9 | 14.01.2026 | Kjøp | BlueNord ASA | ASA |  | 31 | 13595 |
 | Eilertsen, Kristian August (FrP, Troms) | §9 | 05.01.2026 | Kjøp | BlueNord ASA | ASA |  | 34 | 15039 |
+| Gram, Bjørn Arild (Sp, Nord-Trøndelag) | §9 | 17.08.2026 | Kjøp | AS Nord-Trøndelag | AS |  | 7 | 105000 |
+| Gram, Bjørn Arild (Sp, Nord-Trøndelag) | §9 | 12.08.2026 | Kjøp | AS Nord-Trøndelag | AS |  | 4 | 60000 |
 | Jonsterhaug, Martin Virkesdal (FrP, Hordaland) | §9 | 10.09.2026 | Kjøp | Nordic Semiconductor | ASA |  | 2000 | 354569 |
-| Jonsterhaug, Martin Virkesdal (FrP, Hordaland) | §9 | 11.08.2026 | Salg | Equinor | ASA |  | 1500 | 591900,0 |
+| Jonsterhaug, Martin Virkesdal (FrP, Hordaland) | §9 | 11.08.2026 | Salg | Equinor | ASA |  | 1500 | 591609,97 |
 | Jonsterhaug, Martin Virkesdal (FrP, Hordaland) | §9 | 27.07.2026 | Kjøp | Equinor | ASA |  | 500 | 185690,9 |
 | Jonsterhaug, Martin Virkesdal (FrP, Hordaland) | §9 | 24.07.2026 | Kjøp | Equinor | ASA |  | 1000 | 386389,2 |
 | Jonsterhaug, Martin Virkesdal (FrP, Hordaland) | §9 | 23.07.2026 | Salg | Equinor | ASA |  | 1000 | 394206,7 |
